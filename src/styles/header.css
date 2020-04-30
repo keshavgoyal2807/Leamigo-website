@@ -65,17 +65,19 @@
     .details .units .currency{
         margin: 2px;
         margin-right: 15px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 30px;
     }
 
     .details .units .language{
         margin: 2px;
         margin-right: 15px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 40px;
     }
 
     .details .units select{
@@ -85,10 +87,14 @@
         color: white ;
         border: none;
         appearance: none;
+        width: 100%;
     }
 
     .select-icon{
         display: inline;
+        position: absolute;
+        right: 0px;
+        top:5px;
     }
     
 }
@@ -162,30 +168,37 @@
     .details .units .currency{
         margin: 2px;
         margin-right: 12px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 27px;
     }
 
     .details .units .language{
         margin: 2px;
         margin-right: 12px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 37px;
     }
 
     .details .units select{
         outline: none;
         background: none;
-        /* background-color: black; */
+        background-color: black;
         color: white ;
         border: none;
         appearance: none;
+        width: 100%;
     }
+
 
     .select-icon{
         display: inline;
+        position: absolute;
+        right: 0px;
+        top:5px;
     }
     
 }
@@ -257,17 +270,19 @@
     .details .units .currency{
         margin: 2px;
         margin-right: 10px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 30px;
     }
 
     .details .units .language{
         margin: 2px;
         margin-right: 10px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 40px;
     }
 
     .details .units select{
@@ -277,10 +292,18 @@
         color: white ;
         border: none;
         appearance: none;
+        width: 100%;
     }
 
     .select-icon{
         display: inline;
+    }
+
+    .select-icon{
+        display: inline;
+        position: absolute;
+        right: 0px;
+        top:5px;
     }
     
 }
@@ -349,17 +372,19 @@
     .details .units .currency{
         margin: 2px;
         margin-right: 10px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 30px;
     }
 
     .details .units .language{
         margin: 2px;
         margin-right: 10px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 40px;
     }
 
     .details .units select{
@@ -373,6 +398,9 @@
 
     .select-icon{
         display: inline;
+        position: absolute;
+        right: 0px;
+        top:5px;
     }
     
 }
@@ -447,17 +475,19 @@
     .details .units .currency{
         margin: 2px;
         margin-right: 10px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 30px;
     }
 
     .details .units .language{
         margin: 2px;
         margin-right: 10px;
-        /* position: relative; */
+        position: relative;
         display: flex;
         align-items: center;
+        width: 40px;
     }
 
     .details .units select{
@@ -467,10 +497,18 @@
         color: white ;
         border: none;
         appearance: none;
+        width: 100%;
     }
 
     .select-icon{
         display: inline;
+    }
+
+    .select-icon{
+        display: inline;
+        position: absolute;
+        right: 0px;
+        top:5px;
     }
     
 }

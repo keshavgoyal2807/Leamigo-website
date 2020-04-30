@@ -10,7 +10,7 @@ class Header extends React.Component{
             <div className="header">
                 <div className="contact">
                     <div className="address">
-                        <div className="header-icon"><FaMapMarkerAlt size={12} color={'white'} className='h-icon'></FaMapMarkerAlt></div>
+                        <div className="header-icon"><FaMapMarkerAlt size={12} color={'white'}></FaMapMarkerAlt></div>
                         <p>29 Land St, Lorem City, CA</p>
                     </div>
                     <div className="phone">
