@@ -1,0 +1,478 @@
+@media screen and (min-width: 1000px)
+{
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-icon{
+        margin: 5px;
+        display: inline;
+    }
+
+    .header p{
+        color: white;
+        display: inline;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .contact{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+        width: 40%;
+    }
+    .contact .address{
+        margin: 2px;
+        margin-right: 15px;
+    }
+    .contact .phone{
+        margin: 2px;
+    }
+    .details{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 7%;
+        width: 38%;
+    }
+    .details .user{
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .login{
+        margin: 2px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .signup{
+        margin: 2px;
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units{
+        display: flex;
+    }
+
+    .details .units .currency{
+        margin: 2px;
+        margin-right: 15px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units .language{
+        margin: 2px;
+        margin-right: 15px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units select{
+        outline: none;
+        background: none;
+        /* background-color: black; */
+        color: white ;
+        border: none;
+        appearance: none;
+    }
+
+    .select-icon{
+        display: inline;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 999px) and (min-width:800px)
+{
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-icon{
+        margin: 5px;
+        display: inline;
+    }
+
+    .header p{
+        color: white;
+        display: inline;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .contact{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5%;
+        width: 50%;
+    }
+    .contact .address{
+        margin: 2px;
+        margin-right: 15px;
+    }
+    .contact .phone{
+        margin: 2px;
+    }
+    .details{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+        width: 38%;
+    }
+    .details .user{
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .login{
+        margin: 2px;
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .signup{
+        margin: 2px;
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units{
+        display: flex;
+    }
+
+    .details .units .currency{
+        margin: 2px;
+        margin-right: 12px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units .language{
+        margin: 2px;
+        margin-right: 12px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units select{
+        outline: none;
+        background: none;
+        /* background-color: black; */
+        color: white ;
+        border: none;
+        appearance: none;
+    }
+
+    .select-icon{
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width: 799px) and (min-width:700px)
+{
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-icon{
+        margin: 5px;
+        display: inline;
+    }
+
+    .header p{
+        color: white;
+        display: inline;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .contact{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 3%;
+        width: 60%;
+    }
+    .contact .address{
+        margin: 2px;
+        margin-right: 12px;
+    }
+    .contact .phone{
+        margin: 2px;
+    }
+    .details{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 3%;
+        width: 35%;
+    }
+    .details .user{
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .login{
+        margin: 2px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .signup{
+        margin: 2px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units{
+        display: flex;
+    }
+
+    .details .units .currency{
+        margin: 2px;
+        margin-right: 10px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units .language{
+        margin: 2px;
+        margin-right: 10px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units select{
+        outline: none;
+        background: none;
+        /* background-color: black; */
+        color: white ;
+        border: none;
+        appearance: none;
+    }
+
+    .select-icon{
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width: 699px) and (min-width:450px)
+{
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-icon{
+        margin: 5px;
+        display: inline;
+    }
+
+    .header p{
+        color: white;
+        display: inline;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .contact{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .contact .address{
+        margin: 2px;
+        margin-right: 10px;
+    }
+    .contact .phone{
+        margin: 2px;
+    }
+    .details{
+        display: flex;
+        justify-content: flex-start;
+        /* width: 50%; */
+    }
+    .details .user{
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .login{
+        margin: 2px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .signup{
+        margin: 2px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units{
+        display: flex;
+    }
+
+    .details .units .currency{
+        margin: 2px;
+        margin-right: 10px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units .language{
+        margin: 2px;
+        margin-right: 10px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units select{
+        outline: none;
+        background: none;
+        /* background-color: black; */
+        color: white ;
+        border: none;
+        appearance: none;
+    }
+
+    .select-icon{
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width: 449px)
+{
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-icon{
+        margin: 5px;
+        display: inline;
+    }
+
+    .header p{
+        color: white;
+        display: inline;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .address{
+        margin: 2px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+    .contact .phone{
+        margin: 2px;
+        margin-bottom: 15px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 50%; */
+    }
+    .details .user{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .details .user .login{
+        margin: 2px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .user .signup{
+        margin: 2px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units{
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .details .units .currency{
+        margin: 2px;
+        margin-right: 10px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units .language{
+        margin: 2px;
+        margin-right: 10px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+    }
+
+    .details .units select{
+        outline: none;
+        background: none;
+        /* background-color: black; */
+        color: white ;
+        border: none;
+        appearance: none;
+    }
+
+    .select-icon{
+        display: inline;
+    }
+    
+}
+
+
