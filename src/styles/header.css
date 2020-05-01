@@ -308,7 +308,7 @@
     
 }
 
-@media screen and (max-width: 699px) and (min-width:450px)
+@media screen and (max-width: 699px) and (min-width:400px)
 {
     .header{
         width: 100%;
@@ -327,8 +327,8 @@
     .header p{
         color: white;
         display: inline;
-        margin: 5px;
-        font-size: 16px;
+        margin: 3px;
+        font-size: 14px;
     }
     .contact{
         display: flex;
@@ -336,7 +336,7 @@
     }
     .contact .address{
         margin: 2px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     .contact .phone{
         margin: 2px;
@@ -353,14 +353,14 @@
 
     .details .user .login{
         margin: 2px;
-        margin-right: 10px;
+        margin-right: 5px;
         display: flex;
         align-items: center;
     }
 
     .details .user .signup{
         margin: 2px;
-        margin-right: 10px;
+        margin-right: 5px;
         display: flex;
         align-items: center;
     }
@@ -371,7 +371,7 @@
 
     .details .units .currency{
         margin: 2px;
-        margin-right: 10px;
+        margin-right: 5px;
         position: relative;
         display: flex;
         align-items: center;
@@ -380,7 +380,7 @@
 
     .details .units .language{
         margin: 2px;
-        margin-right: 10px;
+        margin-right: 5px;
         position: relative;
         display: flex;
         align-items: center;
@@ -405,7 +405,7 @@
     
 }
 
-@media screen and (max-width: 449px)
+@media screen and (max-width: 399px)
 {
     .header{
         width: 100%;
@@ -424,8 +424,8 @@
     .header p{
         color: white;
         display: inline;
-        margin: 5px;
-        font-size: 16px;
+        margin: 3px;
+        font-size: 14px;
     }
     .contact{
         display: flex;
@@ -434,7 +434,6 @@
     }
     .contact .address{
         margin: 2px;
-        margin-right: 10px;
         margin-bottom: 15px;
     }
     .contact .phone{
@@ -469,6 +468,7 @@
 
     .details .units{
         display: flex;
+        align-items: center;
         margin-bottom: 15px;
     }
 
@@ -479,6 +479,7 @@
         display: flex;
         align-items: center;
         width: 30px;
+        height: 25px;
     }
 
     .details .units .language{
@@ -488,6 +489,7 @@
         display: flex;
         align-items: center;
         width: 40px;
+        height: 25px;
     }
 
     .details .units select{
@@ -508,7 +510,7 @@
         display: inline;
         position: absolute;
         right: 0px;
-        top:5px;
+        top:3px;
     }
     
 }
