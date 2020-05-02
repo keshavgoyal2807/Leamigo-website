@@ -194,7 +194,7 @@
     top:0px;
     right: 0px;
     flex-direction: column;
-    transform: translateX(500px);
+    transform: translateX(1000px);
     background-color: white;
     padding: 30px;
     transition: 0.5s;
