@@ -188,20 +188,21 @@
 
 .nav-items-sidebar
 {
-    position: absolute;
+    position: fixed;
     display: flex;
     min-height: 100vh;
     top:0px;
     right: 0px;
     flex-direction: column;
-    transform: translateX(1000px);
+    width: 0px;
     background-color: white;
-    padding: 30px;
+    padding: 0px;
     transition: 0.5s;
 }
 
 .nav-items-sidebar-show{
-    transform: translateX(0px);
+    padding: 15px;
+    width: 350px;
     transition: 0.8s;
 
 }

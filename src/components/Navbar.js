@@ -89,9 +89,9 @@ class Navbar extends React.Component{
                 </div>
                 <div className="nav-items-sidebar">
                     <div className="sidebar-header">
-                        <MdFlight size={25} className="side-bar-logo-icon"></MdFlight>
+                        <MdFlight size={35} className="side-bar-logo-icon"></MdFlight>
                         <h1>STARTRAVELS</h1>
-                        <MdClose size={20} className="sside-bar-logo-icon" onClick={this.closesidenavbar}></MdClose>
+                        <MdClose size={35} className="sside-bar-logo-icon" onClick={this.closesidenavbar}></MdClose>
                     </div>
                     <div className="sidebar-items">
                     <div className="sidebar-item">
