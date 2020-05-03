@@ -188,6 +188,7 @@
 
 .nav-items-sidebar
 {
+    z-index: 1000;
     position: fixed;
     display: flex;
     min-height: 100vh;
