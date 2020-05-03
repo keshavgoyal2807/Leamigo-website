@@ -1,0 +1,155 @@
+@media screen and (min-width:1000px)
+{
+    .carousel-main{
+        height: 712px;
+        width: 100%;   
+        position: relative;
+        overflow: hidden;
+    }
+
+   
+}
+
+@media screen and (max-width:999px) and (min-width:750px)
+{
+    .carousel-main{
+        height: 800px;
+        width: 100%;   
+        position: relative;
+        overflow: hidden;
+    }
+
+   
+}
+
+@media screen and (max-width:749px) and (min-width:570px)
+{
+    .carousel-main{
+        height: 830px;
+        width: 100%;   
+        position: relative;
+        overflow: hidden;
+    }
+
+   
+}
+
+@media screen and (max-width:569px)
+{
+    .carousel-main{
+        height: 745px;
+        width: 100%;   
+        position: relative;
+        overflow: hidden;
+    }
+
+   
+}
+
+
+.carousel-main .item1{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/sea1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-main .item2{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/sea1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-main .item3{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../images/sea1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item-content{
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.item-contents{
+    opacity: 0;
+    transform: translateY(-50%);
+    transition-delay: 1.5s;
+    transition: transform 1.5s,opacity 1.5s;
+}
+
+.item-contents-active{
+    opacity: 1;
+    transform: none;
+}
+.item-content h1{
+    margin: 0;
+    color: white;
+    font-size: 80px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.item-content h2{
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+    color: white;
+}
+
+.item-content button{
+    outline: none;
+    appearance: none;
+    padding: 8px 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.item-content button:hover{
+    background-color: white;
+    color: black;
+}
+
+.carousel-items{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: transform 0.5s,opacity 1.5s,z-index 0.5s;
+    position: absolute;
+    top:0px;
+
+}
+
+.active{
+    opacity: 1;
+    z-index:100;
+    transform: translateX(0%);
+    position: relative;
+}
+
+.prev{
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 0;
+}
+
+.next{
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 0;
+}

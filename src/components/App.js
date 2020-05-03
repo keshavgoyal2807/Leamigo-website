@@ -3,6 +3,7 @@ import React from 'react';
 import '../styles/App.css';
 import Header from './Header';
 import Navbar from './Navbar';
+import Carousel from './carousel'
 
 class App extends React.Component{
   render(){
@@ -10,6 +11,7 @@ class App extends React.Component{
       <div className="main">
         <Header />
         <Navbar />
+        <Carousel />
       </div>
     )
   }

@@ -21,7 +21,7 @@ class Navbar extends React.Component{
         return(
             <div className="nav-bar">
                 <div className="nav-bar-logo">
-                    <FaHome size={25} color={'orange'}></FaHome>
+                    <MdFlight size={25} color={'orange'}></MdFlight>
                     <h1>STARTRAVELS</h1>
                 </div>
                 <div className="nav-items-desktop">
