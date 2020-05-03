@@ -4,6 +4,7 @@ import '../styles/App.css';
 import Header from './Header';
 import Navbar from './Navbar';
 import Carousel from './carousel'
+import Carouselsearch from './carouselsearch';
 
 class App extends React.Component{
   render(){
@@ -11,7 +12,10 @@ class App extends React.Component{
       <div className="main">
         <Header />
         <Navbar />
-        <Carousel />
+        <div className="carousel-and-search">
+            <Carousel />
+            <Carouselsearch />
+        </div>
       </div>
     )
   }

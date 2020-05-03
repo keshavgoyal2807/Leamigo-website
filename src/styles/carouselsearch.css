@@ -1,0 +1,106 @@
+@media screen and (min-width:1200px)
+{
+    .carousel-search-inner{
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+    .carousel-search-inner{
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px)
+{
+    .carousel-search-inner{
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px)
+{
+    .carousel-search-inner{
+        width: 100%;
+        max-width: 540px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carousel-search-type p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .carousel-search-inner{
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carousel-search-type p{
+        display: none;
+    }
+}
+
+
+.carousel-search{
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+    width:100%;
+    z-index: 250;
+
+}
+
+
+
+.carousel-search-items{
+    flex:0 0 100%;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-search-types{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.carousel-search-type{
+    background-color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-search-type p{
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.carousel-search-type-icon{
+    color: orange;
+    margin-right: 10px;
+}
