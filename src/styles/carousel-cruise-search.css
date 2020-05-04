@@ -1,0 +1,602 @@
+.cruise-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.input-field{
+    display: block;
+    padding: 10px;
+    padding-left: 25px;
+    max-width: 100%;
+    margin: 0;
+    border: 1px solid gray;
+    height: 40px;
+}
+
+.search-bars-icon{
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    color: orange;
+}
+
+.search-bars-icon1{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: orange;
+}
+
+.cruise-search-bar{
+    display: none;
+}
+
+@media screen and (min-width:1200px)
+{    
+    
+    .cruise-src-and-dest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 33%;
+        max-width: 33%;
+    }
+    
+    .cruise-source{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-destination{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-in-out{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 33%;
+        max-width: 33%;
+    }
+    
+    .cruise-check-in{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-out{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 16%;
+        max-width: 16%;
+    }
+    
+    .cruise-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .cruise-submit{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 16%;
+        max-width: 16%;
+    }
+    
+    .cruise-submit-button{
+        width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+    }
+     
+}
+
+@media screen and (max-width:1199px) and (min-width:992px)
+{
+    .cruise-src-and-dest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 41%;
+        max-width: 41%;
+    }
+    
+    .cruise-source{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-destination{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-in-out{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 41%;
+        max-width: 41%;
+    }
+    
+    .cruise-check-in{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-out{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 18%;
+        max-width: 18%;
+    }
+    
+    .cruise-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .cruise-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .cruise-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:760px)
+{
+    .cruise-src-and-dest{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-source{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-destination{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-in-out{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-check-in{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-out{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .cruise-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .cruise-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-field{
+        display: block;
+        padding: 10px;
+        padding-left: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border: 1px solid gray;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:759px) and (min-width:401px)
+{
+    .cruise-src-and-dest{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-source{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-destination{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-in-out{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-check-in{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-out{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .cruise-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .cruise-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-field{
+        display: block;
+        padding: 10px;
+        padding-left: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border: 1px solid gray;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .cruise-src-and-dest{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-source{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-destination{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-in-out{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-check-in{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-check-out{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .cruise-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .cruise-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .cruise-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .cruise-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-field{
+        display: block;
+        padding: 10px;
+        padding-left: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border: 1px solid gray;
+        height: 40px;
+    }
+}

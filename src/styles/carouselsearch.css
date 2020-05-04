@@ -7,6 +7,15 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .carousel-search{
+        position: absolute;
+        bottom: 150px;
+        left: 0px;
+        width:100%;
+        z-index: 250;
+    
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1199px)
@@ -18,6 +27,15 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .carousel-search{
+        position: absolute;
+        bottom: 150px;
+        left: 0px;
+        width:100%;
+        z-index: 250;
+    
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:991px)
@@ -28,6 +46,15 @@
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .carousel-search{
+        position: absolute;
+        bottom: 130px;
+        left: 0px;
+        width:100%;
+        z-index: 250;
+    
     }
 }
 
@@ -44,6 +71,15 @@
     .carousel-search-type p{
         display: none;
     }
+
+    .carousel-search{
+        position: absolute;
+        bottom: 110px;
+        left: 0px;
+        width:100%;
+        z-index: 250;
+    
+    }
 }
 
 @media screen and (max-width:575px)
@@ -59,17 +95,17 @@
     .carousel-search-type p{
         display: none;
     }
+
+    .carousel-search{
+        position: absolute;
+        bottom: 150px;
+        left: 0px;
+        width:100%;
+        z-index: 250;
+    
+    }
 }
 
-
-.carousel-search{
-    position: absolute;
-    bottom: 150px;
-    left: 0px;
-    width:100%;
-    z-index: 250;
-
-}
 
 
 
@@ -83,6 +119,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: -2px;
 }
 
 .carousel-search-type{
@@ -104,3 +141,4 @@
     color: orange;
     margin-right: 10px;
 }
+

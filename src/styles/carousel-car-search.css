@@ -1,0 +1,602 @@
+.car-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.input-field{
+    display: block;
+    padding: 10px;
+    padding-left: 25px;
+    max-width: 100%;
+    margin: 0;
+    border: 1px solid gray;
+    height: 40px;
+}
+
+.search-bars-icon{
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    color: orange;
+}
+
+.search-bars-icon1{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: orange;
+}
+
+.car-search-bar{
+    display: none;
+}
+
+@media screen and (min-width:1200px)
+{    
+    
+    .car-src-and-dest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 33%;
+        max-width: 33%;
+    }
+    
+    .car-source{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-destination{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-in-out{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 33%;
+        max-width: 33%;
+    }
+    
+    .car-check-in{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-out{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 16%;
+        max-width: 16%;
+    }
+    
+    .car-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .car-submit{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 16%;
+        max-width: 16%;
+    }
+    
+    .car-submit-button{
+        width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+    }
+     
+}
+
+@media screen and (max-width:1199px) and (min-width:992px)
+{
+    .car-src-and-dest{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 41%;
+        max-width: 41%;
+    }
+    
+    .car-source{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-destination{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-in-out{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 41%;
+        max-width: 41%;
+    }
+    
+    .car-check-in{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-out{
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 18%;
+        max-width: 18%;
+    }
+    
+    .car-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .car-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .car-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:760px)
+{
+    .car-src-and-dest{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-source{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-destination{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-in-out{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-check-in{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-out{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .car-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .car-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-field{
+        display: block;
+        padding: 10px;
+        padding-left: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border: 1px solid gray;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:759px) and (min-width:401px)
+{
+    .car-src-and-dest{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-source{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-destination{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-in-out{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-check-in{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-out{
+        width:47%;
+        max-width: 47%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .car-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .car-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-field{
+        display: block;
+        padding: 10px;
+        padding-left: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border: 1px solid gray;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .car-src-and-dest{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-source{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-destination{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-in-out{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-check-in{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-check-out{
+        width:98%;
+        max-width: 98%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-adults{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+    
+    .car-adults-counts{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        margin: 5px;
+        height: 40px;
+    }
+    
+    .car-no-of-adults{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+        appearance: none;
+        padding: 10px;
+        background-color: white;
+    }
+    
+    .car-submit{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-right: 5px;
+        padding-left: 5px;
+        flex:0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .car-submit-button{
+        max-width:100%;
+        height: 40px;
+        appearance: none;
+        border: 1px solid gray;
+        background-color: orange;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .input-field{
+        display: block;
+        padding: 10px;
+        padding-left: 25px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border: 1px solid gray;
+        height: 40px;
+    }
+}
