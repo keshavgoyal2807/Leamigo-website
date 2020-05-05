@@ -53,11 +53,13 @@ class HotelOffers extends React.Component{
                 },
                 1199:{
                     items:3
+                },
+                1200:{
+                    items:3
                 }
 
             },
-            responsiveRefreshRate : 200,
-		    responsiveBaseWidth: window,
+            responsiveRefreshRate : 200
         }
         return(
             <div className="hotel-offers">
