@@ -155,15 +155,6 @@
         max-width: 1140px;
     }
 
-    .hotel-offers-carousel
-    {
-        width:3000px;
-        position: relative;
-        left: 0px;
-        display: block;
-
-    }
-
 }
 
 @media screen and (max-width:1199px) and (min-width:992px)
