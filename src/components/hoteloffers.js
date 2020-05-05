@@ -36,6 +36,8 @@ class HotelOffers extends React.Component{
             dots:false,
             autoplayHoverPause:true,
             responsiveClass:true,
+            rewindNav:true,
+            // navText : ['<i class="fa fa-angle-left" style="font-size:30px"></i>','<i class="fa fa-angle-right"></i>'],
             responsive:{
                 0:{
                     items:1
