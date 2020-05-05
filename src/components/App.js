@@ -5,6 +5,8 @@ import Header from './Header';
 import Navbar from './Navbar';
 import Carousel from './carousel'
 import Carouselsearch from './carouselsearch';
+import HotelOffers from './hoteloffers';
+import $ from 'jquery'
 
 class App extends React.Component{
   render(){
@@ -16,6 +18,7 @@ class App extends React.Component{
             <Carousel />
             <Carouselsearch />
         </div>
+        <HotelOffers />
       </div>
     )
   }
