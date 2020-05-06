@@ -9,6 +9,7 @@ import HotelOffers from './hoteloffers';
 import $ from 'jquery'
 import{Route} from 'react-router-dom'
 import BestFeatures from './bestfeatures';
+import TourOffers from './touroffers';
 
 class App extends React.Component{
   render(){
@@ -23,6 +24,7 @@ class App extends React.Component{
         </div>
         <HotelOffers />
         <BestFeatures />
+        <TourOffers />
       </div>
       </Route>
     )
