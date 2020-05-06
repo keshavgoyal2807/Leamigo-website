@@ -8,6 +8,7 @@ import Carouselsearch from './carouselsearch';
 import HotelOffers from './hoteloffers';
 import $ from 'jquery'
 import{Route} from 'react-router-dom'
+import BestFeatures from './bestfeatures';
 
 class App extends React.Component{
   render(){
@@ -21,6 +22,7 @@ class App extends React.Component{
             <Carouselsearch />
         </div>
         <HotelOffers />
+        <BestFeatures />
       </div>
       </Route>
     )
