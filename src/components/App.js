@@ -7,10 +7,12 @@ import Carousel from './carousel'
 import Carouselsearch from './carouselsearch';
 import HotelOffers from './hoteloffers';
 import $ from 'jquery'
+import{Route} from 'react-router-dom'
 
 class App extends React.Component{
   render(){
     return(
+      <Route exact path="/">
       <div className="main">
         <Header />
         <Navbar />
@@ -20,6 +22,7 @@ class App extends React.Component{
         </div>
         <HotelOffers />
       </div>
+      </Route>
     )
   }
 }
