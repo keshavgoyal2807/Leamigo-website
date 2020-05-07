@@ -1,15 +1,17 @@
 import React from 'react';
-// import logo from './logo.svg';
+import $ from 'jquery'
+import{Route} from 'react-router-dom'
 import '../styles/App.css';
 import Header from './Header';
 import Navbar from './Navbar';
 import Carousel from './carousel'
 import Carouselsearch from './carouselsearch';
 import HotelOffers from './hoteloffers';
-import $ from 'jquery'
-import{Route} from 'react-router-dom'
 import BestFeatures from './bestfeatures';
 import TourOffers from './touroffers';
+import CruiseOffers from './cruiseoffers';
+
+
 
 class App extends React.Component{
   render(){
@@ -25,6 +27,7 @@ class App extends React.Component{
         <HotelOffers />
         <BestFeatures />
         <TourOffers />
+        <CruiseOffers />
       </div>
       </Route>
     )
