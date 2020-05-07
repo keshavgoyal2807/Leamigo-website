@@ -62,16 +62,15 @@
 .video-modal-main{
     position: absolute;
     top: 100px;
+    bottom: 300px;
     left: 10%;
-    bottom: 40px;
     width:80%;
-    height: 80%;
+    height: 70%;
     border: 1px solid rgb(204, 204, 204);
     background: rgb(255, 255, 255);
     overflow: auto;
     border-radius: 4px;
     outline: none;
-    padding: 20px;
     border-radius: 3px;
     box-shadow: 0 3px 8px 0 rgba(0,0,0,.24), 0 3px 12px 0 rgba(0,0,0,.12);
     z-index: 1000;
@@ -80,9 +79,10 @@
 .video-modal{
     width: 100%;
     height: 100%;
-    padding: 40px;
-    padding-bottom: 20px;
     position: relative;
+    padding: 20px;
+    padding-top: 35px;
+    padding-right: 35px;
 }
 
 .video-modal-video{
@@ -168,6 +168,6 @@
     .video-modal-main{
         width: 90%;
         left: 5%;
-        height: 50%;
+        height: 40%;
     }
 }

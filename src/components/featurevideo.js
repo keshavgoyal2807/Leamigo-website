@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/featurevideo.css'
 import { FaPlay } from 'react-icons/fa'
-import ReactModal from 'react-modal'
+import Modal from 'react-modal'
 import { MdClose } from 'react-icons/md';
 
 class FeatureVideo extends React.Component{
@@ -41,7 +41,7 @@ class FeatureVideo extends React.Component{
                         </div>
                     </div>
                 </div>
-                <ReactModal 
+                <Modal 
                     isOpen={this.state.openModal}
                     contentLabel={"video-label"}
                     onRequestClose={this.closemodal}
@@ -49,10 +49,10 @@ class FeatureVideo extends React.Component{
                     >
                         <div className="video-modal">
                             <iframe class="video-modal-video" src="https://www.youtube.com/embed/0O2aH4XLbto" allowscriptaccess="always">></iframe>
-                            <div className="video-modal-close" onClick={()=>{this.closemodal()}}><MdClose size={25}></MdClose></div>
+                            <div className="video-modal-close" onClick={()=>{this.closemodal()}}><MdClose size={20}></MdClose></div>
                         </div>
                         
-                    </ReactModal>
+                    </Modal>
             </div>
         )
     }
