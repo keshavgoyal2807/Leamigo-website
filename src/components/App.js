@@ -10,6 +10,7 @@ import HotelOffers from './hoteloffers';
 import BestFeatures from './bestfeatures';
 import TourOffers from './touroffers';
 import CruiseOffers from './cruiseoffers';
+import FeatureVideo from './featurevideo';
 
 
 
@@ -28,6 +29,7 @@ class App extends React.Component{
         <BestFeatures />
         <TourOffers />
         <CruiseOffers />
+        <FeatureVideo />
       </div>
       </Route>
     )
