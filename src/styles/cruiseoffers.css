@@ -102,10 +102,44 @@
     font-weight: bold;
 }
 
+.cruise-offers-item-hover{
+    transform: translateY(-10px);
+}
+
+.cruise-offers-item{
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.cruise-offers-item-photo{
+    transition: 0.4s;
+    overflow: hidden;
+}
+.cruise-offers-item-photo-hover{
+    transform: scale(1.2);
+}
+
+.cruise-offers-item-image{
+    overflow: hidden;
+}
 
 
+.cruise-offers-view-all{
+    margin-top: 80px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
 
-
+.cruise-offers-link-view-all {
+    padding: 10px 50px;
+    color: white;
+    background: orange;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 
 

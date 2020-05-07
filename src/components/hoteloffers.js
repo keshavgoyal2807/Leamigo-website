@@ -119,7 +119,7 @@ class HotelOffers extends React.Component{
                         </OwlCarousel>
                         </div>
                         <div className="hotel-offers-view-all">
-                            <Link to="/" className="link-view-all">View All</Link>
+                            <Link to="/" className="hotel-offers-link-view-all">View All</Link>
                         </div>
                     </div>
                 </div>
