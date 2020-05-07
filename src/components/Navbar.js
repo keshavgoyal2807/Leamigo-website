@@ -10,21 +10,21 @@ class Navbar extends React.Component{
         document.querySelectorAll('.sidebar-inner')[e].classList.toggle('sidebar-inner-show')
     }
     showsidenavbar = ()=>{
-        // console.log(document.querySelector('.nav-items-sidebar'))
-        document.querySelector('.nav-items-sidebar').classList.add('nav-items-sidebar-show')
+        // console.log(document.querySelector('.main-nav-items-sidebar'))
+        document.querySelector('.main-nav-items-sidebar').classList.add('main-nav-items-sidebar-show')
     }
     closesidenavbar = ()=>{
-        document.querySelector('.nav-items-sidebar').classList.remove('nav-items-sidebar-show')
+        document.querySelector('.main-nav-items-sidebar').classList.remove('main-nav-items-sidebar-show')
     }
     render()
     {
         return(
-            <div className="nav-bar">
-                <div className="nav-bar-logo">
+            <div className="main-nav-bar">
+                <div className="main-nav-bar-logo">
                     <MdFlight size={25} color={'orange'}></MdFlight>
                     <h1>STARTRAVELS</h1>
                 </div>
-                <div className="nav-items-desktop">
+                <div className="main-nav-items-desktop">
                     <ul>
                         <li>
                             <div className="home-icon">
@@ -79,15 +79,15 @@ class Navbar extends React.Component{
                         <FaSearch size={30}></FaSearch>
                     </div>
                 </div>
-                <div className="nav-items-mobile">
+                <div className="main-nav-items-mobile">
                     <div className="search-icon">
                         <FaSearch size={30}></FaSearch>
                     </div>
-                    <div className="navopen-icon" onClick={this.showsidenavbar}>
+                    <div className="main-navopen-icon" onClick={this.showsidenavbar}>
                         <GoThreeBars size={30}></GoThreeBars>
                     </div>
                 </div>
-                <div className="nav-items-sidebar">
+                <div className="main-nav-items-sidebar">
                     <div className="sidebar-header">
                         <MdFlight size={35} className="side-bar-logo-icon"></MdFlight>
                         <h1>STARTRAVELS</h1>

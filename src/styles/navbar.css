@@ -4,7 +4,7 @@
 
 @media screen and (min-width:1200px)
 {
-    .nav-bar{
+    .main-nav-bar{
         width:100%;
         padding: 20px;
         background-color: white;
@@ -16,49 +16,49 @@
         z-index: 300;
     }
     
-    .nav-bar-logo{
+    .main-nav-bar-logo{
         width:25%;
         margin-left: 2%;
         display: flex;
         align-items: center;
     }
     
-    .nav-bar-logo h1{
+    .main-nav-bar-logo h1{
         margin: 0;
         font-size: 30px;
         margin-left: 10px;
     }
     
     
-    .nav-items-mobile{
+    .main-nav-items-mobile{
         display: none;
     }
 
-    .nav-items-desktop{
+    .main-nav-items-desktop{
         width: 68%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
     }
-    .nav-items-desktop ul{
+    .main-nav-items-desktop ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
     }
     
-    .nav-items-desktop ul li{
+    .main-nav-items-desktop ul li{
         margin: 0;
         padding: 0;
         margin-right: 25px;
     }
     
-    .nav-items-desktop ul li div{
+    .main-nav-items-desktop ul li div{
         display: flex;
         align-items: center;
     }
     
-    .nav-items-desktop ul li:first-child{
+    .main-nav-items-desktop ul li:first-child{
         border-bottom: 2px solid orange;
         color: orange;
     }
@@ -76,7 +76,7 @@
 
 @media screen and (max-width:1199px) and (min-width:1000px)
 {
-    .nav-bar{
+    .main-nav-bar{
         width:100%;
         padding: 20px;
         background-color: white;
@@ -88,36 +88,36 @@
         z-index: 300;
     }
     
-    .nav-bar-logo{
+    .main-nav-bar-logo{
         width:45%;
         margin-left: 5%;
         display: flex;
         align-items: center;
     }
     
-    .nav-bar-logo h1{
+    .main-nav-bar-logo h1{
         margin: 0;
         font-size: 30px;
         margin-left: 10px;
     }
 
-    .nav-items-desktop{
+    .main-nav-items-desktop{
         display: none;
     }
 
-    .nav-items-mobile{
+    .main-nav-items-mobile{
         width:15%;
         display: flex;
         align-items: center;
     }
-    .nav-items-mobile .search-icon{
+    .main-nav-items-mobile .search-icon{
         margin-right: 5%;
     }
 }
 
 @media screen and (max-width:999px) and (min-width:700px)
 {
-    .nav-bar{
+    .main-nav-bar{
         width:100%;
         padding: 20px;
         background-color: white;
@@ -129,36 +129,36 @@
         z-index: 300;
     }
     
-    .nav-bar-logo{
+    .main-nav-bar-logo{
         width:50%;
         margin-left: 5%;
         display: flex;
         align-items: center;
     }
     
-    .nav-bar-logo h1{
+    .main-nav-bar-logo h1{
         margin: 0;
         font-size: 30px;
         margin-left: 10px;
     }
 
-    .nav-items-desktop{
+    .main-nav-items-desktop{
         display: none;
     }
 
-    .nav-items-mobile{
+    .main-nav-items-mobile{
         width:15%;
         display: flex;
         align-items: center;
     }
-    .nav-items-mobile .search-icon{
+    .main-nav-items-mobile .search-icon{
         margin-right: 5%;
     }
 }
 
 @media screen and (max-width:699px)
 {
-    .nav-bar{
+    .main-nav-bar{
         width:100%;
         padding: 20px;
         background-color: white;
@@ -170,35 +170,35 @@
         z-index: 300;
     }
     
-    .nav-bar-logo{
+    .main-nav-bar-logo{
         width:65%;
         margin-left: 2%;
         display: flex;
         align-items: center;
     }
     
-    .nav-bar-logo h1{
+    .main-nav-bar-logo h1{
         margin: 0;
         font-size: 30px;
         margin-left: 10px;
     }
 
-    .nav-items-desktop{
+    .main-nav-items-desktop{
         display: none;
     }
 
-    .nav-items-mobile{
+    .main-nav-items-mobile{
         width:15%;
         display: flex;
         align-items: center;
     }
-    .nav-items-mobile .search-icon{
+    .main-nav-items-mobile .search-icon{
         margin-right: 2%;
     }
 }
 
 
-.nav-items-sidebar
+.main-nav-items-sidebar
 {
     z-index: 200;
     position: fixed;
@@ -213,7 +213,7 @@
     transition: 0.3s;
 }
 
-.nav-items-sidebar-show{
+.main-nav-items-sidebar-show{
     padding: 15px;
     width: 350px;
     transition: 0.5s;
