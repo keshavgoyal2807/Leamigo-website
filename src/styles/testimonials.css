@@ -8,6 +8,7 @@
     padding-bottom: 124px;
 }
 
+
 .testimonial-inner{
     margin: 0 auto;
 }
@@ -75,21 +76,33 @@
 
 .active{
     opacity: 1;
-    z-index:100;
+    z-index:240;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
     transform: translateX(0%);
     position: relative;
 }
 
 .prev{
     opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
     transform: translateX(-100%);
-    z-index: 100;
+    z-index: 200;
 }
 
 .next{
     opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
     transform: translateX(100%);
-    z-index: 100;
+    z-index: 200;
 }
 
 .testimonial-ratings{
