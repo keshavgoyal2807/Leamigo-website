@@ -88,15 +88,15 @@ class TourOffers extends React.Component{
                                 return(
                                     <div className="tour-offers-carousel-item" onMouseEnter={()=>{this.scaleitem(index)}} onMouseLeave={()=>{this.descaleitem(index)}}>
                                     <div className="tour-offers-carousel-item-image">
-                                    <img src={tour1} alt="tour" className="tociii"></img>
-                                    <div className="tour-offers-tour-details">
-                                            <p>${tour.price}</p>
-                                        <div className="tour-offers-tour-fulldetails">
-                                        <Link to="/" className="to-link-fulldetails"><FaAngleRight size={15}></FaAngleRight></Link>
+                                        <img src={tour1} alt="tour" className="tociii"></img>
+                                        <div className="tour-offers-tour-details">
+                                                <p>${tour.price}</p>
+                                            <div className="tour-offers-tour-fulldetails">
+                                            <Link to="/" className="to-link-fulldetails"><FaAngleRight size={15}></FaAngleRight></Link>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="tour-offers-carousel-item-name">
+                                    <div className="tour-offers-carousel-item-name">
                                         <p className="tour-name">{tour.name}</p>
                                         <p className="tour-place">From:{tour.place}</p>
                                         <div className="tour-offers-tour-ratings">
@@ -106,7 +106,7 @@ class TourOffers extends React.Component{
                                             <FaStar size={15}></FaStar>
                                             <FaStar size={15}></FaStar>
                                         </div>
-                                </div>
+                                    </div>
                             </div>
                                 )
                             })}
