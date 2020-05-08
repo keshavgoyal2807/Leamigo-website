@@ -192,10 +192,17 @@
     .testimonial-page-heading h2{
         font-size: 32px;
     }
+    .testimonial{
+        background-attachment: initial;
+    }
 }
 
 @media screen and (max-width:575px)
 {
+
+    .testimonial{
+        background-attachment: initial;
+    }
     .testimonial-inner{
         max-width: 95%;
     }
