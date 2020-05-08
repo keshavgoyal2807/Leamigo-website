@@ -1,0 +1,131 @@
+.highlights{
+    background: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/highlights.jpg') 50% 87%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 124px;
+    padding-bottom: 124px;
+    color: white;
+    font-weight: 400;
+}
+
+.highlights-inner{
+    margin: 0 auto;
+}
+
+.highlights-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.highlights-item{
+    width: 30%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.highlight-item-icon
+{
+    color: orange;
+    text-align: left;
+    width: 100px;
+}
+
+.h-i-i{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+
+.rotate-icon{
+    transform: rotateZ(40deg);
+    transform-origin: 50% 50%;
+}
+
+.highlight-item-text{
+    overflow: hidden;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+}
+.highlight-item-text h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+@media screen and (min-width:1200px)
+{
+    .highlights-inner{
+        max-width: 1140px;
+    }
+
+}
+
+@media screen and (max-width:1199px) and (min-width:992px)
+{
+    .highlights-inner{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px)
+{
+    .highlights-inner{
+        max-width: 720px;
+    }
+
+    .highlight-item-text h2{
+        font-size: 45px;
+    }
+
+    .highlight-item-text p{
+        font-size: 15px;
+    }
+
+    .highlight-item-icon
+    {
+        color: orange;
+        text-align: left;
+        margin-right: 15px;
+        width: auto;
+    }
+
+    .h-i-i{
+        display: inline-block;
+        width: 60px;
+        height: 60px;   
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:576px)
+{
+    .highlights-inner{
+        max-width: 540px;
+    }
+
+    .highlights-item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .highlights-inner{
+        max-width: 95%;
+    }
+
+    .highlights-item{
+        width: 100%;
+    }
+}
