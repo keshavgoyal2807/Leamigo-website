@@ -233,4 +233,15 @@
     .tour-offers-items{
         max-width: 540px;
     }
+
+    .tour-offers{
+        background-attachment: initial;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .tour-offers{
+        background-attachment: initial;
+    }
 }
