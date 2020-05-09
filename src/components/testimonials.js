@@ -15,15 +15,15 @@ class Testimonials extends React.Component{
     changeSlides=(n,items)=>{
        clearInterval(this.timer);
        var content = document.querySelectorAll('.testimonial-carousel-items');
-       var images = document.querySelectorAll('.testimonial-image')
+       var images = document.querySelectorAll('.testimonial-page-image')
        if(n===items)
        {
            content[n-1].classList.remove('active');
            content[n-1].classList.add('prev');
-           images[n-1].classList.remove('testimonial-image-active')
+           images[n-1].classList.remove('testimonial-page-image-active')
            content[n].classList.remove('next');
            content[n].classList.add('active');
-           images[n].classList.add('testimonial-image-active')
+           images[n].classList.add('testimonial-page-image-active')
            content[0].classList.remove('prev');
            content[0].classList.add('next');
            this.timer = setInterval(()=>{this.changeSlides(0,items)},5000)
@@ -32,10 +32,10 @@ class Testimonials extends React.Component{
        {
            content[items].classList.remove('active')
            content[items].classList.add('prev');
-           images[items].classList.remove('testimonial-image-active')
+           images[items].classList.remove('testimonial-page-image-active')
            content[n].classList.remove('next');
            content[n].classList.add('active');
-           images[n].classList.add('testimonial-image-active')
+           images[n].classList.add('testimonial-page-image-active')
            content[n+1].classList.remove('prev');
            content[n+1].classList.add('next');
            this.timer = setInterval(()=>{this.changeSlides(n+1,items)},5000)
@@ -44,10 +44,10 @@ class Testimonials extends React.Component{
        {
            content[n-1].classList.remove('active');
            content[n-1].classList.add('prev');
-           images[n-1].classList.remove('testimonial-image-active')
+           images[n-1].classList.remove('testimonial-page-image-active')
            content[n].classList.remove('next')
            content[n].classList.add('active');
-           images[n].classList.add('testimonial-image-active')
+           images[n].classList.add('testimonial-page-image-active')
            content[n+1].classList.remove('prev')
            content[n+1].classList.add('next');
            this.timer = setInterval(()=>{this.changeSlides(n+1,items)},5000)
@@ -60,7 +60,7 @@ class Testimonials extends React.Component{
        items = items-1;
        var slide = 0;
        document.querySelectorAll('.testimonial-carousel-items')[0].classList.add('active')
-       document.querySelectorAll('.testimonial-image')[0].classList.add('testimonial-image-active')
+       document.querySelectorAll('.testimonial-page-image')[0].classList.add('testimonial-image-active')
        this.timer = setInterval(()=>{this.changeSlides(slide+1,items)},5000)
     }
     render()
@@ -108,15 +108,15 @@ class Testimonials extends React.Component{
                                 <p className="testimonial-name">jhon smith</p>
                             </div>
                         </div>
-                        <div className="testimonial-images">
-                            <div className="testimonial-image">
-                                <img src={client_1} alt="client" className="testimonial-cimage"></img>
+                        <div className="testimonial-page-images">
+                            <div className="testimonial-page-image">
+                                <img src={client_1} alt="client" className="testimonial-page-cimage"></img>
                             </div>
-                            <div className="testimonial-image">
-                                <img src={client_2} alt="client" className="testimonial-cimage"></img>
+                            <div className="testimonial-page-image">
+                                <img src={client_2} alt="client" className="testimonial-page-cimage"></img>
                             </div>
-                            <div className="testimonial-image">
-                                <img src={client_3} alt="client" className="testimonial-cimage"></img>
+                            <div className="testimonial-page-image">
+                                <img src={client_3} alt="client" className="testimonial-page-cimage"></img>
                             </div>
                         </div>
                     </div>

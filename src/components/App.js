@@ -38,6 +38,7 @@ class App extends React.Component{
         <Highlights />
         <VehicleOffers />
         <Testimonials />
+        <VehicleOffers />
       </div>
       </Route>
     )

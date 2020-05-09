@@ -11,9 +11,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: -webkit-sticky;
         position: sticky;
         top: 0px;
-        z-index: 300;
+        z-index: 500;
     }
     
     .main-nav-bar-logo{
@@ -83,9 +84,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: -webkit-sticky;
         position: sticky;
         top: 0px;
-        z-index: 300;
+        z-index: 500;
     }
     
     .main-nav-bar-logo{
@@ -124,9 +126,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: -webkit-sticky;
         position: sticky;
         top: 0px;
-        z-index: 300;
+        z-index: 500;
     }
     
     .main-nav-bar-logo{
@@ -165,9 +168,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: -webkit-sticky;
         position: sticky;
         top: 0px;
-        z-index: 300;
+        z-index: 500;
     }
     
     .main-nav-bar-logo{
@@ -200,7 +204,7 @@
 
 .main-nav-items-sidebar
 {
-    z-index: 200;
+    z-index: 500;
     position: fixed;
     display: flex;
     min-height: 100vh;

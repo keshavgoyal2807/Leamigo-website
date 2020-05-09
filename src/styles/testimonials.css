@@ -49,18 +49,19 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    overflow: hidden;
 }
 
 .testimonial-carousel-items{
     position: absolute;
-    top: 0px;
+    top:0px;
     left: 0px;
     margin: 0;
     padding: 0;
     overflow: hidden;
     opacity: 0;
     z-index: 100;
-    transition: transform 0.5s,opacity 0.5s,z-index 0.5s;
+    transition: transform 0.5s,opacity 0.5s;
     text-align: center;
     line-height: 1.5;
 }
@@ -74,13 +75,13 @@
 
 
 .active{
+    position: relative;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translateX(0%);
-    position: relative;
 }
 
 .prev{
@@ -113,16 +114,21 @@
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 25px;
 }
 
-.testimonial-images{
+.testimonial-page-images{
     height: 120px;
+    position: relative;
+    bottom: 0px;
+    /* left: 10%; */
+    margin: 15px auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.testimonial-image{
+.testimonial-page-image{
     width: 80px;
     height: 80px;
     border: 2px solid gray;
@@ -130,26 +136,21 @@
     overflow: hidden;
     opacity: 0.4;
     margin-right: 10px;
-    background-clip: padding-box;
-    position: relative;
-    transition: 0.5s;
-    /* text-indent: -999px; */
+    transition: 0.2s;
 }
 
-.testimonial-image-active{
+.testimonial-page-image-active{
     width: 110px;
     height: 110px;
     border: 4px solid orange;
     border-radius: 100px;
-    overflow: hidden;
-    margin-right: 10px;
     opacity: 1;
 }
 
-.testimonial-cimage{
+.testimonial-page-cimage{
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
@@ -207,12 +208,12 @@
         font-size: 32px;
     }
 
-    .testimonial-image{
+    .testimonial-page-image{
         width: 40px;
         height: 40px;
     }
 
-    .testimonial-image-active{
+    .testimonial-page-image-active{
         width: 70px;
         height: 70px;
     }
