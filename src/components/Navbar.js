@@ -16,6 +16,16 @@ class Navbar extends React.Component{
     closesidenavbar = ()=>{
         document.querySelector('.main-nav-items-sidebar').classList.remove('main-nav-items-sidebar-show')
     }
+
+    showdropdown = (pos)=>{
+        document.querySelectorAll('.nav-home-list-on-hover')[pos].classList.add('nav-home-list-on-hover-hover')
+    }
+
+    closedropdown = (pos)=>{
+        document.querySelectorAll('.nav-home-list-on-hover')[pos].classList.remove('nav-home-list-on-hover-hover')
+    }
+    rend
+
     render()
     {
         return(
@@ -27,49 +37,49 @@ class Navbar extends React.Component{
                 <div className="main-nav-items-desktop">
                     <ul>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}} >
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
                         </li>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}}>
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
                         </li>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}}>
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
                         </li>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}}>
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
                         </li>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}}>
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
                         </li>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}}>
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
                         </li>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}}>
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
                         </li>
                         <li>
-                            <div className="home-icon">
+                            <div className="home-icon" onMouseEnter={()=>{this.showdropdown(0)}} onMouseLeave={()=>{this.closedropdown(0)}}>
                                 <p>HOME</p>
                                 <FaAngleDown size={20}></FaAngleDown>
                             </div>
@@ -208,6 +218,23 @@ class Navbar extends React.Component{
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="nav-home-list-on-hover">
+                    <div className="hover-list-item">
+                        <p>Main Page</p>
+                    </div>
+                    <div className="hover-list-item">
+                        <p>Main Page</p>
+                    </div>
+                    <div className="hover-list-item">
+                        <p>Main Page</p>
+                    </div>
+                    <div className="hover-list-item">
+                        <p>Main Page</p>
+                    </div>
+                    <div className="hover-list-item">
+                        <p>Main Page</p>
                     </div>
                 </div>
             </div>

@@ -295,3 +295,30 @@
     width: 100%;
     text-align: center;
 }
+
+.nav-home-list-on-hover{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 5px;
+    width: 250px;
+    transition: 0.1s;
+}
+
+.nav-home-list-on-hover-hover{
+    display: flex;
+}
+
+.hover-list-item{
+    width: 100%;
+    text-align: center;
+}
+
+.hover-list-item:hover{
+    background-color: orange;
+}
