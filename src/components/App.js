@@ -15,6 +15,7 @@ import FlightOffers from './flightoffers';
 import Highlights from './highlights';
 import VehicleOffers from './vehicleoffers';
 import Testimonials from './testimonials';
+import Blogs from './blogs';
 
 
 
@@ -38,7 +39,7 @@ class App extends React.Component{
         <Highlights />
         <VehicleOffers />
         <Testimonials />
-        <VehicleOffers />
+        <Blogs />
       </div>
       </Route>
     )
