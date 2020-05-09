@@ -1,0 +1,128 @@
+.subscribe{
+    background: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0,0.6)),url('../images/newsletter.jpg') 50% 78%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 124px;
+    padding-bottom: 124px;
+}
+
+.subscribe-container{
+    margin: 0 auto;
+}
+
+.subscribe-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subscribe-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.subscribe-item h2{
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3em;
+}
+
+.subscribe-item p{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.subscribe-email{
+    position: relative;
+    width: 610px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.s-input-email
+{
+    height: 60px;
+    padding: 10px;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.s-email-icon{
+    position: absolute;
+    right: 10px;
+    color: orange;
+    top: 15px;
+}
+
+
+
+@media screen and (min-width:1200px)
+{
+    .subscribe-container{
+        max-width: 1140px;
+    }
+
+}
+
+@media screen and (max-width:1199px) and (min-width:992px)
+{
+    .subscribe-container{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px)
+{
+    .subscribe-container{
+        max-width: 720px;
+    }
+
+}
+
+@media screen and (max-width:767px) and (min-width:576px)
+{
+    .subscribe-container{
+        max-width: 540px;
+    }
+
+    .subscribe-item p{
+        font-size: 15px;
+    }
+
+    .subscribe-item h2{
+        font-size: 31px;
+    }
+
+    .subscribe-email{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .subscribe-container{
+        max-width: 95%;
+    }
+
+    .subscribe-item p{
+        font-size: 15px;
+    }
+
+    .subscribe-item h2{
+        font-size: 31px;
+    }
+
+    .subscribe-email{
+        width: 80%;
+    }
+}
