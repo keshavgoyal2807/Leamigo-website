@@ -1,0 +1,342 @@
+footer{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer-top{
+    background: #231f20;
+    padding-top: 86px;
+    padding-bottom: 86px;
+    width: 100%;
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.footer-top-container{
+    margin: 0 auto;
+}
+
+.footer-top-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.f-contact-us{
+    width:25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.f-contact-us h3{
+    text-transform: uppercase;
+    color: orange;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.3em;
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+}
+
+.f-cu-items{
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.f-cu-items p{
+    font-size: 15px;
+}
+
+.f-cu-icon{
+    margin-right: 10px;
+    color: white;
+}
+
+.f-company{
+    width: 25%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f-company h3{
+    text-transform: uppercase;
+    color: orange;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.3em;
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+}
+
+.f-company-items{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.f-resources{
+    width: 25%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f-resources h3{
+    text-transform: uppercase;
+    color: orange;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    line-height: 1.3em;
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+}
+
+.f-resources-items{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.f-about-us{
+    width: 25%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.f-about-us h3{
+    text-transform: uppercase;
+    color: orange;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    line-height: 1.3em;
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+}
+
+.f-about-us-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-about-us-icon{
+    color: gray;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.f-about-us-icon:hover{
+    color: orange;
+}
+
+.footer-bottom{
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    color: white;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.footer-bottom-container{
+    margin: 0 auto;
+}
+
+.footer-bottom-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-content p{
+    margin: 0;
+}
+
+.footer-bottom-item1{
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.footer-bottom-item2{
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.footer-bottom-link{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (min-width:1200px)
+{
+    .footer-top-container{
+        max-width: 1140px;
+    }
+
+    .footer-bottom-container{
+        max-width: 1140px;
+    }
+
+}
+
+@media screen and (max-width:1199px) and (min-width:992px)
+{
+    .footer-top-container{
+        max-width: 960px;
+    }
+
+    .footer-bottom-container{
+        max-width: 960px;
+    }
+
+    .f-cu-items{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px)
+{
+    .footer-top-container{
+        max-width: 720px;
+    }
+
+    .footer-bottom-container{
+        max-width: 720px;
+    }
+
+    .f-contact-us{
+        width: 50%;
+    }
+
+    .f-company{
+        width: 50%;
+    }
+
+    .f-resources{
+        width: 50%;
+    }
+
+    .f-about-us{
+        width: 50%;
+    }
+
+    .f-cu-items{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:767px) and (min-width:576px)
+{
+    .footer-top-container{
+        max-width: 540px;
+    }
+
+    .footer-bottom-container{
+        max-width: 540px;
+    }
+
+    .f-contact-us{
+        width: 100%;
+    }
+
+    .f-company{
+        width: 100%;
+    }
+
+    .f-resources{
+        width: 100%;
+    }
+
+    .f-about-us{
+        width: 100%;
+    }
+
+    .f-cu-items{
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .footer-bottom-item1{
+        width: 100%;
+    }
+
+    .footer-bottom-item2{
+        width: 100%;
+    }
+
+    .footer-bottom-content p{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:575px)
+{
+    .footer-top-container{
+        max-width: 95%;
+    }
+
+    .footer-bottom-container{
+        max-width: 95%;
+    }
+
+    .f-contact-us{
+        width: 100%;
+    }
+
+    .f-company{
+        width: 100%;
+    }
+
+    .f-resources{
+        width: 100%;
+    }
+
+    .f-about-us{
+        width: 100%;
+    }
+
+    .f-cu-items{
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .footer-bottom-item1{
+        width: 100%;
+    }
+
+    .footer-bottom-item2{
+        width: 100%;
+    }
+
+    .footer-bottom-content p{
+        margin: 10px;
+    }
+}

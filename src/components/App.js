@@ -17,6 +17,7 @@ import VehicleOffers from './vehicleoffers';
 import Testimonials from './testimonials';
 import Blogs from './blogs';
 import Subscribe from './subscribe';
+import Footer from './footer';
 
 
 
@@ -42,6 +43,7 @@ class App extends React.Component{
         <Testimonials />
         <Blogs />
         <Subscribe />
+        <Footer />
       </div>
       </Route>
     )
