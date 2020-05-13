@@ -98,7 +98,9 @@ class FlightSearchPageMobileFilter extends React.Component{
                     </div>
                 </div>
 
+
                 <div className="f-s-p-f-m-underline"></div>
+
                
                
                 <div className="f-s-p-f-m-byprice">
@@ -118,6 +120,8 @@ class FlightSearchPageMobileFilter extends React.Component{
                         </div>
                     </div>
                 </div>
+
+                <div className="f-s-p-f-m-underline"></div>
 
                 <div className="f-s-p-f-m-app-filters">
                     <p>Apply Filters</p>

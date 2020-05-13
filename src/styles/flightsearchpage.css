@@ -39,6 +39,10 @@
     padding: 25px;
 }
 
+.flight-search-page-mobile-filter{
+    display: none;
+}
+
 @media screen and (min-width:1200px)
 {
     .flight-search-page-desktop-searchbar{
