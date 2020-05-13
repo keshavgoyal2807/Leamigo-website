@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/vehicleoffers.css'
+import '../../styles/vehicleoffers.css'
 import { Link } from 'react-router-dom'
-import vehicle1 from '../images/vehicle-2.jpg'
+import vehicle1 from '../../images/vehicle-2.jpg'
 import { FaStar,FaAngleRight, FaClock} from 'react-icons/fa'
 import { Mdvehicle } from 'react-icons/md'
 

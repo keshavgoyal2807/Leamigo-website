@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/footer.css'
+import '../../styles/footer.css'
 import {MdLocalPhone,MdMail} from 'react-icons/md'
 import {FiMail} from 'react-icons/fi'
 import {FaMapMarkerAlt,FaFacebookF,FaTwitter,FaInstagram,FaLinkedinIn,FaYoutube} from 'react-icons/fa'

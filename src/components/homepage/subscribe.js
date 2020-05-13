@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/subscribe.css'
+import '../../styles/subscribe.css'
 import {MdEmail} from 'react-icons/md'
 
 class Subscribe extends React.Component{

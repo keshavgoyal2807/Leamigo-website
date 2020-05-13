@@ -2,7 +2,7 @@ import React from 'react'
 import {MdFlight,MdClose} from 'react-icons/md'
 import {FaAngleDown,FaSearch,FaHome} from 'react-icons/fa'
 import {GoThreeBars} from 'react-icons/go'
-import '../styles/navbar.css'
+import '../../styles/navbar.css'
 
 class Navbar extends React.Component{
     showinneritems = (e)=>{

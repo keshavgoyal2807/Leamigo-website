@@ -1,13 +1,13 @@
 import React from 'react'
 import {FaStar,FaAngleRight, FaAngleLeft} from 'react-icons/fa'
 import $ from 'jquery'
-import '../styles/hoteloffers.css'
+import '../../styles/hoteloffers.css'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import hotel1 from '../images/hotel-1.jpg'
+import hotel1 from '../../images/hotel-1.jpg'
 import {Link} from 'react-router-dom' 
 
 window.jQuery = window.$ = $;

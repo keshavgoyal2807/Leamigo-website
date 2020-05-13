@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/testimonials.css'
+import '../../styles/testimonials.css'
 import { FaStar } from 'react-icons/fa';
-import client_1 from '../images/client-1.jpg'
-import client_2 from '../images/client-2.jpg'
-import client_3 from '../images/client-3.jpg'
+import client_1 from '../../images/client-1.jpg'
+import client_2 from '../../images/client-2.jpg'
+import client_3 from '../../images/client-3.jpg'
 class Testimonials extends React.Component{
 
     constructor(props){
@@ -16,7 +16,7 @@ class Testimonials extends React.Component{
        clearInterval(this.timer);
        var content = document.querySelectorAll('.testimonial-carousel-items');
        var images = document.querySelectorAll('.testimonial-page-image')
-       if(n===items)
+       if(n===items && images.length > 0 && content.length >0)
        {
            content[n-1].classList.remove('active');
            content[n-1].classList.add('prev');
@@ -28,7 +28,7 @@ class Testimonials extends React.Component{
            content[0].classList.add('next');
            this.timer = setInterval(()=>{this.changeSlides(0,items)},5000)
        }
-       else if(n===0)
+       else if(n===0  && images.length > 0 && content.length >0)
        {
            content[items].classList.remove('active')
            content[items].classList.add('prev');
@@ -40,7 +40,7 @@ class Testimonials extends React.Component{
            content[n+1].classList.add('next');
            this.timer = setInterval(()=>{this.changeSlides(n+1,items)},5000)
        }
-       else
+       else if(images.length > 0 && content.length >0)
        {
            content[n-1].classList.remove('active');
            content[n-1].classList.add('prev');
@@ -51,6 +51,10 @@ class Testimonials extends React.Component{
            content[n+1].classList.remove('prev')
            content[n+1].classList.add('next');
            this.timer = setInterval(()=>{this.changeSlides(n+1,items)},5000)
+       }
+
+       else{
+        clearInterval(this.timer);
        }
     
     

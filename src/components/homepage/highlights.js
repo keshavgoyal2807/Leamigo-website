@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/highlights.css'
+import '../../styles/highlights.css'
 import {FaShip,FaCar} from 'react-icons/fa'
 import { MdFlight } from 'react-icons/md'
 

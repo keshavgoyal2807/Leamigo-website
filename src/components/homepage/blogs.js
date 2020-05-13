@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/blogs.css'
+import '../../styles/blogs.css'
 import {Link} from 'react-router-dom'
 import {FaAngleRight,FaRegCalendarAlt} from 'react-icons/fa'
-import blog1 from '../images/latest-blog-1.jpg'
+import blog1 from '../../images/latest-blog-1.jpg'
 
 class Blogs extends React.Component{
 

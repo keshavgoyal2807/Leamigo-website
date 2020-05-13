@@ -1,14 +1,67 @@
 import React from 'react'
 import {MdFlight} from 'react-icons/md'
 import {FaHotel,FaSuitcase,FaShip,FaCar,FaMapMarkerAlt,FaRegCalendarAlt,FaAngleDown} from 'react-icons/fa'
-import '../styles/carouselsearch.css'
-import '../styles/carousel-flight-search.css'
-import '../styles/carousel-cruise-search.css'
-import '../styles/carousel-hotel-search.css'
-import '../styles/carousel-tour-search.css'
-import '../styles/carousel-car-search.css'
+import '../../styles/carouselsearch.css'
+import '../../styles/carousel-flight-search.css'
+import '../../styles/carousel-cruise-search.css'
+import '../../styles/carousel-hotel-search.css'
+import '../../styles/carousel-tour-search.css'
+import '../../styles/carousel-car-search.css'
+import {Link,Redirect} from 'react-router-dom'
 
 class Carouselsearch extends React.Component{
+
+    constructor(props)
+    {
+        super(props)
+        this.state = {
+            errormsg:null,
+            flightsearch:false
+        }
+        this.flight={
+            src:"",
+            dest:"",
+            dep:"",
+            arr:"",
+            adults:""
+        }
+    }
+
+    checkflights = (e)=>{
+        e.preventDefault();
+        if(this.flight.src==="")
+        {
+            this.setState({
+                errormsg:"enter correct source"
+            })
+            return;
+        }
+        if(this.flight.dest==="")
+        {
+            this.setState({
+                errormsg:"enter correct destination"
+            })
+            return;
+        }
+        if(this.flight.dep==="")
+        {
+            this.setState({
+                errormsg:"enter correct departure date"
+            })
+            return;
+        }
+        if(this.flight.adults==="")
+        {
+            this.setState({
+                errormsg:"enter correct no  of adults"
+            })
+            return;
+        }
+        this.setState({
+            errormsg:"",
+            flightsearch:true
+        })
+    }
 
     changeTextToDate = (no)=>{
         document.getElementsByClassName('input-field-date')[no].type='date';
@@ -94,27 +147,28 @@ class Carouselsearch extends React.Component{
                                 <form className="flight-form">
                                     <div className="flight-src-and-dest">
                                         <div className="flight-source">
-                                            <input type="text" className="input-field" placeholder="FORM"></input>
+                                        {/* this.setState((prev)=>{return({flight:{...prev.flight,src:e.target.value}}) */}
+                                            <input type="text" className="input-field" placeholder="FORM"  onInput={(e)=>{this.flight.src=e.target.value}}></input>
                                             <FaMapMarkerAlt size={15} className="search-bars-icon"></FaMapMarkerAlt>
                                         </div>
                                         <div className="flight-destination">
-                                            <input type="text" className="input-field" placeholder="TO"></input>
+                                            <input type="text" className="input-field" placeholder="TO"  onInput={(e)=>{this.flight.dest=e.target.value}}></input>
                                             <FaMapMarkerAlt size={15} className="search-bars-icon"></FaMapMarkerAlt>
                                         </div>
                                     </div>
                                     <div className="flight-check-in-out">
                                         <div className="flight-check-in">
-                                            <input type="date" className="input-field input-field-date" placeholder="CHECK IN"></input>
+                                            <input type="date" className="input-field input-field-date" placeholder="CHECK IN"  onInput={(e)=>{this.flight.dep=e.target.value}} ></input>
                                             <FaRegCalendarAlt size={15} className="search-bars-icon"></FaRegCalendarAlt>
                                         </div>
                                         <div className="flight-check-out">
-                                            <input type="date" className="input-field input-field-date" placeholder="CHECK OUT"></input>
+                                            <input type="date" className="input-field input-field-date" placeholder="CHECK OUT"   onInput={(e)=>{this.flight.arr=e.target.value}}></input>
                                             <FaRegCalendarAlt size={15} className="search-bars-icon"></FaRegCalendarAlt>
                                         </div>
                                     </div>
                                     <div className="flight-adults">
                                         <div className="flight-adults-counts">
-                                            <select className="flight-no-of-adults">
+                                            <select className="flight-no-of-adults"  onInput={(e)=>{this.flight.adults=e.target.value}}>
                                                 <option value={''}>ADULTS</option>
                                                 <option value={1}>1</option>
                                                 <option value={2}>2</option>
@@ -124,9 +178,12 @@ class Carouselsearch extends React.Component{
                                         </div>
                                     </div>
                                     <div className="flight-submit">
-                                        <button className="flight-submit-button">SEARCH</button>
+                                        <button className="flight-submit-button" onClick={(e)=>{this.checkflights(e)}}>SEARCH</button>
                                     </div>
                                 </form>
+                                {this.state.flightsearch && <Redirect push to={{pathname:"/flights",
+                                                                            state:{flight:this.flight}  
+                                                                                }} />}
                             </div>
                             <div className="hotel-search-bar">
                                 <form className="hotel-form">
@@ -291,6 +348,9 @@ class Carouselsearch extends React.Component{
                                     </div>
                                 </form>
                             </div>
+                        </div>
+                        <div className="error-checking">
+                            <p>{this.state.errormsg}</p>
                         </div>
                     </div>
                 </div>

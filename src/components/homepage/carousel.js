@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/carousel.css'
+import '../../styles/carousel.css'
 
 class Carousel extends React.Component{
 
@@ -13,7 +13,7 @@ class Carousel extends React.Component{
         clearInterval(this.timer);
         var content = document.querySelectorAll('.carousel-items');
         var item_content = document.querySelectorAll('.item-contents');
-        if(n===items)
+        if(n===items && item_content.length > 0  && content.length > 0)
         {
             let k = (n-1)*3;
             let k1 = n*3;
@@ -31,7 +31,7 @@ class Carousel extends React.Component{
             content[0].classList.add('next');
             this.timer = setInterval(()=>{this.changeSlides(0,items)},5000)
         }
-        else if(n===0)
+        else if(n===0  && item_content.length > 0  && content.length > 0)
         {
             let k = items*3
             let k1=n*3;
@@ -49,7 +49,7 @@ class Carousel extends React.Component{
             content[n+1].classList.add('next');
             this.timer = setInterval(()=>{this.changeSlides(n+1,items)},5000)
         }
-        else
+        else if(item_content.length > 0  && content.length > 0)
         {
             let k = (n-1)*3
             let k1=n*3;
@@ -66,6 +66,10 @@ class Carousel extends React.Component{
             content[n+1].classList.remove('prev')
             content[n+1].classList.add('next');
             this.timer = setInterval(()=>{this.changeSlides(n+1,items)},5000)
+        }
+        else
+        {
+            clearInterval(this.timer);
         }
 
 

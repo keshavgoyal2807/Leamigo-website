@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/flightoffers.css'
+import '../../styles/flightoffers.css'
 import { Link } from 'react-router-dom'
-import flight_image from '../images/flight-1.jpg'
+import flight_image from '../../images/flight-1.jpg'
 import { FaStar } from 'react-icons/fa'
 import { MdFlight } from 'react-icons/md'
 

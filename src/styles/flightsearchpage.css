@@ -1,0 +1,648 @@
+.flight-search-page-main{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.flight-search-page-top-bar{
+    width: 100%;
+    background-color: #ffaf1a;
+    margin: 0;
+}
+
+.flight-search-page-desktop-searchbar{
+    display: none;
+    margin: 0 auto;
+}
+
+.flight-search-page-flight-form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.flight-search-page-mobile-displaybar{
+    display: none;
+    margin: 0 auto;
+}
+
+.flight-search-page-fliter-and-flight-details{
+    width: 100%;
+    background-color: #e6e6e6;
+}
+
+.flight-search-page-fliter-and-flight-details-container{
+    width: 100%;
+    padding: 25px;
+}
+
+@media screen and (min-width:1200px)
+{
+    .flight-search-page-desktop-searchbar{
+        display: block;
+    }
+
+    .flight-search-page-desktop-searchbar{
+        width: 1140px;
+    }
+
+    .flight-search-page-flight-src-and-dest{
+        flex:0 0 33%;
+        max-width: 33%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .flight-search-page-flight-source{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-right: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-destination{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-left: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-check-in-out{
+        flex:0 0 33%;
+        max-width: 33%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .flight-search-page-flight-check-in{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-right: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-check-out{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-left: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-adults{
+        flex:0 0 16%;
+        max-width: 16%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .flight-search-page-flight-adults-counts{
+        flex:0 0 96%;
+        max-width: 96%;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-submit{
+        flex:0 0 16%;
+        max-width: 16%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;   
+    }
+
+    .flight-search-page-flight-submit-button
+    {
+        flex:0 0 96%;
+        max-width: 96%;
+        appearance: none;
+        background: none;
+        height: 40px;
+        position: relative;
+        background-color: white;
+    }
+
+    .flight-search-page-search-bars-icon{
+        color: black;
+        position: absolute;
+        left:6px;
+        top:12px;
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
+    }
+
+    .flight-search-page-search-bars-icon1{
+        color: black;
+        position: absolute;
+        right:6px;
+        top:12px;
+        width: 15px;
+        height: 15px;
+        margin-left: 3px;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+    .flight-search-page-desktop-searchbar{
+        display: block;
+    }
+
+
+    .flight-search-page-desktop-searchbar{
+        width: 960px;
+    }
+
+    .flight-search-page-flight-src-and-dest{
+        flex:0 0 41%;
+        max-width: 41%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .flight-search-page-flight-source{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-right: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-destination{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-left: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-check-in-out{
+        flex:0 0 41%;
+        max-width: 41%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .flight-search-page-flight-check-in{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-right: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-check-out{
+        flex:0 0 46%;
+        max-width: 46%;
+        margin-left: 5px;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-adults{
+        flex:0 0 16%;
+        max-width: 16%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .flight-search-page-flight-adults-counts{
+        flex:0 0 96%;
+        max-width: 96%;
+        height: 40px;
+        position: relative;
+    }
+
+    .flight-search-page-flight-submit{
+        flex:0 0 16%;
+        max-width: 16%;
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;   
+    }
+
+    .flight-search-page-flight-submit-button
+    {
+        flex:0 0 96%;
+        max-width: 96%;
+        appearance: none;
+        background: none;
+        height: 40px;
+        position: relative;
+        background-color: white;
+        margin-top: 20px;
+    }
+
+    .flight-search-page-search-bars-icon{
+        color: black;
+        position: absolute;
+        left:6px;
+        top:12px;
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
+    }
+
+    .flight-search-page-search-bars-icon1{
+        color: black;
+        position: absolute;
+        right:6px;
+        top:12px;
+        width: 15px;
+        height: 15px;
+        margin-left: 3px;
+    }
+
+    .flight-search-page-fliter-and-flight-details{
+        width: 100%;
+        background-color: #e6e6e6;
+    }
+
+    .flight-search-page-fliter-and-flight-details-container{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .flight-search-page-mobile-filter{
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px){
+    .flight-search-page-mobile-displaybar{
+        display: block;
+        max-width: 720px;
+        background-color: #ffaf1a;
+    }
+
+    .flight-search-page-flight-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .flight-search-page-backpage{
+        flex:0 0 10%;
+        max-width: 10%;
+        color: black;
+        text-align: center;
+    }
+
+    .flight-search-page-backpage-icon{
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .flight-search-page-flight-name-details{
+        flex: 0 0 70%;
+        max-width: 70%;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flight-search-page-flight-srcdest-details{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;
+    }
+    .flight-search-page-flight-srcdest-details p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .flight-search-page-flight-srcdest-icon{
+        color: black;
+        margin: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .flight-search-page-flight-date-details{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;   
+    }
+    .flight-search-page-flight-date-details p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 15px;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .flight-search-page-filterpage{
+        flex:0 0 10%;
+        max-width: 10%;
+        color: black;
+        text-align: center;
+    }
+
+    .flight-search-page-filterpage-icon{
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .flight-search-page-flight-date-details1{
+        display: flex;
+    }
+    .flight-search-page-flight-date-details1 p{
+        margin: 0;
+    }
+
+    .flight-search-page-desktop-filter{
+        display: none;
+    }
+
+    .flight-search-page-mobile-filter{
+        width: 100%;
+        display: none;
+        height: 100vh;
+        overflow: scroll;
+        scrollbar-width: none;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+    .flight-search-page-mobile-filter-open{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:767px) and (min-width:568px){
+    .flight-search-page-mobile-displaybar{
+        display: block;
+        max-width: 540px;
+    }
+
+    .flight-search-page-flight-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .flight-search-page-backpage{
+        flex:0 0 10%;
+        max-width: 10%;
+        color: black;
+        text-align: center;
+    }
+
+    .flight-search-page-backpage-icon{
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .flight-search-page-flight-name-details{
+        flex: 0 0 70%;
+        max-width: 70%;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flight-search-page-flight-srcdest-details{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;
+    }
+    .flight-search-page-flight-srcdest-details p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .flight-search-page-flight-srcdest-icon{
+        color: black;
+        margin: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .flight-search-page-flight-date-details{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;   
+    }
+    .flight-search-page-flight-date-details p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 15px;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .flight-search-page-filterpage{
+        flex:0 0 10%;
+        max-width: 10%;
+        color: black;
+        text-align: center;
+    }
+
+    .flight-search-page-filterpage-icon{
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .flight-search-page-flight-date-details1{
+        display: flex;
+    }
+    .flight-search-page-flight-date-details1 p{
+        margin: 0;
+    }
+    .flight-search-page-desktop-filter{
+        display: none;
+    }
+    .flight-search-page-mobile-filter{
+        width: 100%;
+        display: none;
+        height: 100vh;
+        overflow: scroll;
+        scrollbar-width: none;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+    .flight-search-page-mobile-filter-open{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:575px)
+{
+    .flight-search-page-mobile-displaybar{
+        display: block;
+        max-width: 95%;
+    }
+
+    .flight-search-page-flight-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .flight-search-page-backpage{
+        flex:0 0 10%;
+        max-width: 10%;
+        color: black;
+        text-align: center;
+    }
+
+    .flight-search-page-backpage-icon{
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .flight-search-page-flight-name-details{
+        flex: 0 0 70%;
+        max-width: 70%;
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flight-search-page-flight-srcdest-details{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;
+    }
+    .flight-search-page-flight-srcdest-details p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .flight-search-page-flight-srcdest-icon{
+        color: black;
+        margin: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .flight-search-page-flight-date-details{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: black;   
+    }
+    .flight-search-page-flight-date-details p{
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-right: 15px;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .flight-search-page-filterpage{
+        flex:0 0 10%;
+        max-width: 10%;
+        color: black;
+        text-align: center;
+    }
+
+    .flight-search-page-filterpage-icon{
+        margin: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .flight-search-page-flight-date-details1{
+        display: flex;
+    }
+    .flight-search-page-flight-date-details1 p{
+        margin: 0;
+    }
+    .flight-search-page-desktop-filter{
+        display: none;
+    }
+    .flight-search-page-mobile-filter{
+        width: 100%;
+        display: none;
+        height: 100vh;
+        overflow: scroll;
+        scrollbar-width: none;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+    }
+    .flight-search-page-mobile-filter-open{
+        display: block;
+    }
+    
+}
+
+
+.flight-search-page-mobile-filter-open{
+    display: block;
+}

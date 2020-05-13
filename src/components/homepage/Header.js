@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaMapMarkerAlt,FaPhone,FaLock,FaPlus,FaDollarSign,FaAngleDown} from 'react-icons/fa'
-import '../styles/header.css'
+import '../../styles/header.css'
 
 
 class Header extends React.Component{

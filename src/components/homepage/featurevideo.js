@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/featurevideo.css'
+import '../../styles/featurevideo.css'
 import { FaPlay } from 'react-icons/fa'
 import Modal from 'react-modal'
 import { MdClose } from 'react-icons/md';

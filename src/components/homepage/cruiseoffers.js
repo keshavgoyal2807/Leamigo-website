@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/cruiseoffers.css'
+import '../../styles/cruiseoffers.css'
 import { Link } from 'react-router-dom'
-import cruise1 from '../images/cruise-1.jpg'
+import cruise1 from '../../images/cruise-1.jpg'
 import { FaStar } from 'react-icons/fa';
 
 class CruiseOffers extends React.Component{

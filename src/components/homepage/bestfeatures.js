@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/bestfeatures.css'
+import '../../styles/bestfeatures.css'
 import {FaDollarSign,FaLock,FaThumbsUp,FaBars, FaTh} from 'react-icons/fa'
 
 
