@@ -1,0 +1,133 @@
+
+.f-s-p-prices-and-days-inner{
+    width:100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.f-s-p-prices-and-days-slider{
+    position: relative;
+    display: flex;
+    height: 100%;
+    transform: translate3d(0,0,0);
+}
+
+
+.f-s-p-price-and-day-active{
+    background-color: orange;
+}
+
+.f-s-p-price-and-day{
+    flex:0 0 110px;
+    width:110px;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.f-s-p-price-and-day p{
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.f-s-p-left-dates{
+    position: absolute;
+    height: 80px;
+    width:30px;
+    left: -30px;
+    top: 0px;
+    border-right: 1px solid #d9d9d9;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.f-s-p-right-dates{
+    position: absolute;
+    height: 80px;
+    width:30px;
+    right: -30px;
+    top: 0px;
+    border-left: 1px solid #d9d9d9;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.f-s-p-dates-scroll-icon{
+    width:18px;
+    height: 18px;
+    color: black;
+}
+
+
+
+
+
+@media screen and (min-width:1200px)
+{
+    .f-s-p-prices-and-days{
+        max-width: 880px;
+        margin: 0 auto;
+        background-color: white;
+        height: 80px;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+    .f-s-p-prices-and-days{
+        max-width: 660px;
+        margin: 0 auto;
+        background-color: white;
+        height: 80px;
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px)
+{
+    .f-s-p-prices-and-days{
+        max-width: 660px;
+        margin: 0 auto;
+        background-color: white;
+        height: 80px;
+        position: relative;
+    }
+}
+
+@media screen and (min-width:568px) and (max-width:767px)
+{
+    .f-s-p-prices-and-days{
+        max-width: 440px;
+        margin: 0 auto;
+        background-color: white;
+        height: 80px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:567px)
+{
+    .f-s-p-prices-and-days{
+        max-width: 330px;
+        margin: 0 auto;
+        background-color: white;
+        height: 80px;
+        position: relative;
+    }
+}

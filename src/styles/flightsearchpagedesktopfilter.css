@@ -1,5 +1,5 @@
 .flight-search-page-filter{
-    max-width:22%;
+    max-width:100%;
     background-color: white;
     box-shadow: 2px 2px 5px #f2f2f2;
     border-radius: 10px;
@@ -172,7 +172,7 @@
     }
 
     .flight-search-page-filter{
-        max-width:21%;
+        max-width:100%;
     }
 
     .f-s-p-f-bydep{

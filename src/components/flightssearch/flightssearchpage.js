@@ -6,6 +6,7 @@ import {MdArrowBack} from 'react-icons/md'
 import {IoIosArrowRoundForward} from 'react-icons/io'
 import FlightSearchPageDesktopFilter from './flightsearchpagedesktopfilter';
 import FlightSearchPageMobileFilter from './flightsearchpagemobilefilter';
+import FLightSearchPageFlightPricesDays from './flightsearchpageflightpricesdays';
 
 
 class FlightSearchPage extends React.Component{
@@ -14,11 +15,11 @@ class FlightSearchPage extends React.Component{
         super(props)
         this.state={
             flight:{
-                src:"",
-                dest:"",
-                dep:"",
-                arr:"",
-                adults:"",
+                src:props.flight.location.state.flight.src,
+                dest:props.flight.location.state.flight.dest,
+                dep:props.flight.location.state.flight.dep,
+                arr:props.flight.location.state.flight.arr,
+                adults:props.flight.location.state.flight.adults,
                 depdate:"",
                 depmon:"",
                 depyear:""
@@ -36,14 +37,6 @@ class FlightSearchPage extends React.Component{
     componentDidMount = ()=>{
         if(this.props.flight.location.state)
         {
-            this.setState((prev_state,props)=>{
-                return(
-                {
-                    ...prev_state,
-                    flight:props.flight.location.state.flight
-                }
-                )
-            })
 
             this.setState((prev_state)=>{
                 return(
@@ -138,6 +131,11 @@ class FlightSearchPage extends React.Component{
                         </div>
                         <div className="flight-search-page-mobile-filter">
                             <FlightSearchPageMobileFilter />
+                        </div>
+                        <div className="flight-search-page-flight-details">
+                            <div className="flight-search-page-flight-days-price">
+                                <FLightSearchPageFlightPricesDays start_Date = {this.state.flight.dep}/>
+                            </div>
                         </div>
                     </div>
                 </div>
