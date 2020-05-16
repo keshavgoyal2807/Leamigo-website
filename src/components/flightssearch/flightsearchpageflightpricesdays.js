@@ -150,6 +150,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
 
         else if(this.slide_Ref.current.clientWidth == 330)
         {
+            index = index-1;
             if(index<0)
             {
                 this.translate_pos = 0;
