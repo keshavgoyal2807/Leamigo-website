@@ -125,6 +125,8 @@ class FLightSearchPageFlightPricesDays extends React.Component{
             {
                 this.translate_pos = index*-110;
             }
+            document.querySelector('.f-s-p-price-and-day-active').classList.remove('f-s-p-price-and-day-active');
+            document.querySelectorAll('.f-s-p-price-and-day')[index1].classList.add('f-s-p-price-and-day-active')
             var slider = document.querySelector('.f-s-p-prices-and-days-slider');
             slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
         }
@@ -140,6 +142,8 @@ class FLightSearchPageFlightPricesDays extends React.Component{
             {
                 this.translate_pos = index*-110;
             }
+            document.querySelector('.f-s-p-price-and-day-active').classList.remove('f-s-p-price-and-day-active');
+            document.querySelectorAll('.f-s-p-price-and-day')[index1].classList.add('f-s-p-price-and-day-active')
             var slider = document.querySelector('.f-s-p-prices-and-days-slider');
             slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
         }
@@ -154,6 +158,8 @@ class FLightSearchPageFlightPricesDays extends React.Component{
             {
                 this.translate_pos = index*-110;
             }
+            document.querySelector('.f-s-p-price-and-day-active').classList.remove('f-s-p-price-and-day-active');
+            document.querySelectorAll('.f-s-p-price-and-day')[index1].classList.add('f-s-p-price-and-day-active')
             var slider = document.querySelector('.f-s-p-prices-and-days-slider');
             slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
         }
