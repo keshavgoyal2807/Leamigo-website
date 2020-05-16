@@ -78,14 +78,85 @@ class FLightSearchPageFlightPricesDays extends React.Component{
 
     scrollLeft = ()=>{
         var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+        if(this.translate_pos <= -39820)
+        {
+            return;
+        }
         slider.style.transform = `translate3d(${this.translate_pos-110}px,0,0)`;
         this.translate_pos = this.translate_pos-110
     }
 
     scrollRight = ()=>{
         var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+        if(this.translate_pos == 0)
+        {
+            return;
+        }
         slider.style.transform = `translate3d(${this.translate_pos+110}px,0,0)`;
         this.translate_pos = this.translate_pos+110
+    }
+
+    scrollslider = (index)=>{
+        var index1 = index
+        if(this.slide_Ref.current.clientWidth == 880)
+        {
+            index = index-3;
+            if(index<0)
+            {
+                this.translate_pos = 0;
+            }
+            else
+            {
+                this.translate_pos = index*-110;
+            }
+            document.querySelector('.f-s-p-price-and-day-active').classList.remove('f-s-p-price-and-day-active');
+            document.querySelectorAll('.f-s-p-price-and-day')[index1].classList.add('f-s-p-price-and-day-active')
+            var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+            slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
+        }
+        else if(this.slide_Ref.current.clientWidth == 660)
+        {
+            index = index-2;
+            if(index<0)
+            {
+                this.translate_pos = 0;
+            }
+            else
+            {
+                this.translate_pos = index*-110;
+            }
+            var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+            slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
+        }
+
+        else if(this.slide_Ref.current.clientWidth == 440)
+        {
+            index = index-1;
+            if(index<0)
+            {
+                this.translate_pos = 0;
+            }
+            else
+            {
+                this.translate_pos = index*-110;
+            }
+            var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+            slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
+        }
+
+        else if(this.slide_Ref.current.clientWidth == 330)
+        {
+            if(index<0)
+            {
+                this.translate_pos = 0;
+            }
+            else
+            {
+                this.translate_pos = index*-110;
+            }
+            var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+            slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
+        }
     }
 
     render()
@@ -94,12 +165,12 @@ class FLightSearchPageFlightPricesDays extends React.Component{
             <div className="f-s-p-prices-and-days" ref={this.slide_Ref}>
                 <div className="f-s-p-prices-and-days-inner">
                 <div className="f-s-p-prices-and-days-slider">
-                    {this.state.price_per_day.map((day)=>{
+                    {this.state.price_per_day.map((day,index)=>{
                         {/* console.log(this.state.date_of_flight,day.date); */}
                         if(day.date.getDate() === this.state.date_of_flight.getDate() && day.date.getMonth() === this.state.date_of_flight.getMonth() && day.date.getYear() === this.state.date_of_flight.getYear() )
                         {
                             return(
-                                <div className="f-s-p-price-and-day f-s-p-price-and-day-active ">
+                                <div className="f-s-p-price-and-day f-s-p-price-and-day-active " onClick={()=>{this.scrollslider(index)}}>
                                 <p>{this.days_in_week[day.date.getDay()]},{day.date.getDate()} {this.months_in_year[day.date.getMonth()]}</p>
                                 <p>$ {day.price}</p>
                                 </div>
@@ -107,7 +178,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
                         }
 
                         return(
-                            <div className="f-s-p-price-and-day">
+                            <div className="f-s-p-price-and-day" onClick={()=>{this.scrollslider(index)}}>
                             <p>{this.days_in_week[day.date.getDay()]},{day.date.getDate()} {this.months_in_year[day.date.getMonth()]}</p>
                             <p>$ {day.price}</p>
                             </div>

@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .f-s-p-price-and-day p{
