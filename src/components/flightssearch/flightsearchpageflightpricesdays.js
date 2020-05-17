@@ -191,7 +191,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
                     this.translate_pos = this.translate_pos + check;
                     slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
                     this.throtteltimer = null;
-                }, 200);
+                }, 100);
             }
         }
     }
