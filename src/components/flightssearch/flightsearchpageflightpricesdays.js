@@ -15,6 +15,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
         this.translate_pos = 0;
         this.slide_Ref = React.createRef();
         this.xpos = -100;
+        this.throtteltimer = null
     }
 
     componentDidMount = ()=>{
@@ -176,12 +177,22 @@ class FLightSearchPageFlightPricesDays extends React.Component{
         }
         else
         {
-            var check;
-            check = e.changedTouches[0].screenX;
-            check = check - this.xpos;
-            var slider = document.querySelector('.f-s-p-prices-and-days-slider');
-            this.translate_pos = this.translate_pos + check;
-            slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
+            if(this.throtteltimer!=null)
+            {
+                return;
+            }
+            else
+            {
+                this.throtteltimer = setTimeout(() => {
+                    var check;
+                    check = e.changedTouches[0].screenX;
+                    check = check - this.xpos;
+                    var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+                    this.translate_pos = this.translate_pos + check;
+                    slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
+                    this.throtteltimer = null;
+                }, 200);
+            }
         }
     }
 
@@ -193,6 +204,8 @@ class FLightSearchPageFlightPricesDays extends React.Component{
     resetxvalue = (e)=>{
         e.persist();
         this.xpos = -100;
+        clearTimeout(this.throtteltimer);
+        this.throtteltimer = null
     }
 
     render()
