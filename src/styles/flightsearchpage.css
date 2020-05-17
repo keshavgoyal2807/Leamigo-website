@@ -173,13 +173,25 @@
     .flight-search-page-flight-details{
         flex:0 0 75%;
         max-width: 75%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 25px;
+        padding: 20px;
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+
+    .flight-search-page-flights-sort-options{
+        width:100%;
+        max-width: 830px;
+        margin: 20px;
+        margin-left: 0px;
+        background-color: white;
+        height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 }
@@ -328,11 +340,24 @@
     .flight-search-page-flight-details{
         flex:0 0 79%;
         max-width: 79%;
+        padding: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .flight-search-page-flights-sort-options{
+        width:100%;
+        max-width: 720px;
+        margin: 0 auto;
+        background-color: white;
+        height: 40px;
+        position: relative;
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 25px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -344,11 +369,24 @@
     }
 
     .flight-search-page-flight-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
         padding: 15px;
-        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+
+    .flight-search-page-flights-sort-options{
+        width:100%;
+        max-width: 720px;
+        margin: 0 auto;
+        background-color: white;
+        height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .flight-search-page-backpage{
@@ -474,11 +512,24 @@
     }
 
     .flight-search-page-flight-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 15px;
-        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .flight-search-page-flights-sort-options{
+        width:100%;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: white;
+        height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .flight-search-page-backpage{
@@ -604,11 +655,24 @@
     }
 
     .flight-search-page-flight-details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
         padding: 15px;
-        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+
+    .flight-search-page-flights-sort-options{
+        width:100%;
+        max-width: 390px;
+        margin: 0 auto;
+        background-color: white;
+        height: 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .flight-search-page-backpage{

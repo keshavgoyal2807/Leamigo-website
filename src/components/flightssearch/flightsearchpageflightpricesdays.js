@@ -47,7 +47,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
 
         // console.log(this.slide_Ref.current)
 
-        if(this.slide_Ref.current.clientWidth == 880)
+        if(this.slide_Ref.current.clientWidth == 770)
         {
             this.translate_pos = this.translate_pos +330;
             var slider = document.querySelector('.f-s-p-prices-and-days-slider');
@@ -100,7 +100,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
 
     scrollslider = (index)=>{
         var index1 = index
-        if(this.slide_Ref.current.clientWidth == 880)
+        if(this.slide_Ref.current.clientWidth == 770)
         {
             index = index-3;
             if(index<0)
