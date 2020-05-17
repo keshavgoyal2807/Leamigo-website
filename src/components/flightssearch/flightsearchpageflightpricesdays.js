@@ -14,6 +14,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
         this.months_in_year = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
         this.translate_pos = 0;
         this.slide_Ref = React.createRef();
+        this.xpos = -100;
     }
 
     componentDidMount = ()=>{
@@ -166,12 +167,40 @@ class FLightSearchPageFlightPricesDays extends React.Component{
         }
     }
 
+    moveslider = (e)=>{
+        e.persist();
+        // console.log(e.changedTouches[0].screenX);
+        if(this.xpos === -100)
+        {
+            return;
+        }
+        else
+        {
+            var check;
+            check = e.changedTouches[0].screenX;
+            check = check - this.xpos;
+            var slider = document.querySelector('.f-s-p-prices-and-days-slider');
+            this.translate_pos = this.translate_pos + check;
+            slider.style.transform = `translate3d(${this.translate_pos}px,0,0)`;
+        }
+    }
+
+    setxvalue = (e)=>{
+        e.persist();
+        this.xpos = e.changedTouches[0].screenX;
+    }
+
+    resetxvalue = (e)=>{
+        e.persist();
+        this.xpos = -100;
+    }
+
     render()
     {
         return(
             <div className="f-s-p-prices-and-days" ref={this.slide_Ref}>
                 <div className="f-s-p-prices-and-days-inner">
-                <div className="f-s-p-prices-and-days-slider">
+                <div className="f-s-p-prices-and-days-slider" onTouchMove={(e)=>{this.moveslider(e)}} onTouchStart={(e)=>{this.setxvalue(e)}}  onTouchEnd={(e)=>{this.resetxvalue(e)}}>
                     {this.state.price_per_day.map((day,index)=>{
                         {/* console.log(this.state.date_of_flight,day.date); */}
                         if(day.date.getDate() === this.state.date_of_flight.getDate() && day.date.getMonth() === this.state.date_of_flight.getMonth() && day.date.getYear() === this.state.date_of_flight.getYear() )
