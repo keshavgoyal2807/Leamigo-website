@@ -1,12 +1,13 @@
 import React from 'react'
 import '../../styles/flightsearchpage.css'
 import Moment from 'react-moment';
-import {FaHotel,FaSuitcase,FaShip,FaCar,FaMapMarkerAlt,FaRegCalendarAlt,FaAngleDown, FaRoad,FaArrowsAltH, FaFilter} from 'react-icons/fa'
+import {FaHotel,FaSuitcase,FaShip,FaCar,FaMapMarkerAlt,FaRegCalendarAlt,FaAngleDown, FaRoad,FaArrowsAltH, FaFilter, FaLongArrowAltDown} from 'react-icons/fa'
 import {MdArrowBack} from 'react-icons/md'
 import {IoIosArrowRoundForward} from 'react-icons/io'
 import FlightSearchPageDesktopFilter from './flightsearchpagedesktopfilter';
 import FlightSearchPageMobileFilter from './flightsearchpagemobilefilter';
 import FLightSearchPageFlightPricesDays from './flightsearchpageflightpricesdays';
+import indlogo from '../../images/indigo.gif'
 
 
 class FlightSearchPage extends React.Component{
@@ -23,7 +24,8 @@ class FlightSearchPage extends React.Component{
                 depdate:"",
                 depmon:"",
                 depyear:""
-            }
+            },
+            flights:[{flight_no:'G8-119',flight_name:'Indigo',dep_time:new Date(),arr_time:new Date(),stops:0,price:'2,599'}]
         }
         this.month_short = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
     }
@@ -137,10 +139,65 @@ class FlightSearchPage extends React.Component{
                                 <FLightSearchPageFlightPricesDays start_Date = {this.state.flight.dep}/>
                             </div>
                             <div className="flight-search-page-flights-sort-options">
-                                <p>Cheapest</p>
-                                <p>Arrival</p>
-                                <p>Departure</p>
-                                <p>Duration</p>
+                                <div className="flight-search-page-flights-sort-names">
+                                    <p>Sorted By:</p>
+                                </div>
+                                <div className="flight-search-page-flights-sort-options-all">
+                                    <div className="flight-search-page-flights-sort-option-1">
+                                       <p>Departure</p>
+                                       <FaLongArrowAltDown />
+                                    </div>
+                                    <div className="flight-search-page-flights-sort-option-2">
+                                        <p>Duration</p>
+                                        <FaLongArrowAltDown />
+                                    </div>
+                                    <div className="flight-search-page-flights-sort-option-3">
+                                        <p>Arrival</p>
+                                        <FaLongArrowAltDown />
+                                    </div>
+                                </div>
+                                <div className="flight-search-page-flights-sort-option-4">
+                                    <p>Price</p>
+                                    <FaLongArrowAltDown />
+                                </div>
+                            </div>
+                            <div className="flight-search-page-flights">
+                                <div className="flight-search-page-flights-flight-logo-name-number">
+                                    <div className="flight-search-page-flights-flight-logo">
+                                        <img src={indlogo} alt="logo" />
+                                    </div>
+                                    <div className="flight-search-page-flights-flight-name-number">
+                                        <p>{this.state.flights[0].flight_name}</p>
+                                        <p>{this.state.flights[0].flight_no}</p>
+                                    </div>
+                                </div>
+                                <div className="flight-search-page-flights-flight-dep-dur-arr">
+                                    <div className="flight-search-page-flights-flight-departure">
+                                        <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
+                                        <p>{this.state.flight.src}</p>
+                                    </div>
+                                    <div className="flight-search-page-flights-flight-duration">
+                                        <p>{this.state.flights[0].arr_time.getHours()-this.state.flights[0].dep_time.getHours()+3} hrs {this.state.flights[0].arr_time.getMinutes()-this.state.flights[0].dep_time.getMinutes()+20} mins</p>
+                                    </div>
+                                    <div className="flight-search-page-flights-flight-arrival">
+                                        <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
+                                        <p>{this.state.flight.dest}</p>
+                                    </div>
+                                </div>
+                                <div className="flight-search-page-flights-flight-price-book">
+                                    <div className="flight-search-page-flights-flight-price">
+                                        <p>${this.state.flights[0].price}</p>
+                                    </div>
+                                    <div className="flight-search-page-flights-flight-book">
+                                            <p>BOOK</p>
+                                    </div>
+                                </div>
+                                <div className="flight-search-page-flights-flight-more-details">
+                                    <div className="flight-search-page-flights-flight-more-details-button">
+                                        <p>Flight Details</p>
+                                        <FaAngleDown className="flight-search-page-flights-flight-more-details-button-icon" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

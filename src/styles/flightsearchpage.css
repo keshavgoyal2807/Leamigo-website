@@ -194,6 +194,213 @@
         padding-right: 20px;
     }
 
+    .flight-search-page-flights-sort-names{
+        width:20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .flight-search-page-flights-sort-names p{
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .flight-search-page-flights-sort-options-all{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-sort-option-1{
+        width:30%;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-2{
+        width:40%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-3{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-4{
+        width:30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights{
+        width:100%;
+        max-width: 830px;
+        margin: 20px;
+        margin-left: 0px;
+        background-color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-logo-name-number{
+        width:20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    .flight-search-page-flights-flight-logo img{
+        width:45px;
+        height: 45px;
+        margin: 10px;
+        margin-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-name-number p{
+        font-size: 14px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    .flight-search-page-flights-flight-name-number p:first-of-type{
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-dep-dur-arr{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-flight-departure{
+        width:30%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-departure p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-departure p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-arrival{
+        width:30%;
+        text-align:center;
+    }
+
+    .flight-search-page-flights-flight-arrival p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-arrival p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-duration{
+        width:40%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-price-book{
+        width:30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .flight-search-page-flights-flight-price{
+        padding-right: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        width: 40%;
+    }
+
+    .flight-search-page-flights-flight-book{
+        width:60%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        /* height: 40px; */
+        border-radius: 16px;
+        border: 1px solid black;
+    }
+
+    .flight-search-page-flights-flight-book p{
+        margin: 0px;
+        margin: 5px;
+    }
+
+    .flight-search-page-flights-flight-more-details{
+        width:100%;
+        width: 830px;
+        border-top: 2px solid orange;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-more-details-button{
+        width:100%;
+        flex:0 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: orange;
+    }
+
+    .flight-search-page-flights-flight-more-details-button p{
+        margin: 10px;
+    }
+
 }
 
 @media screen and (min-width:992px) and (max-width:1199px)
@@ -359,6 +566,211 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .flight-search-page-flights-sort-names{
+        width:20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .flight-search-page-flights-sort-names p{
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .flight-search-page-flights-sort-options-all{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-sort-option-1{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-2{
+        width:40%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-3{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-4{
+        width:30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: lighter;
+    }
+
+    .flight-search-page-flights{
+        width:100%;
+        max-width: 720px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-logo-name-number{
+        width:20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    .flight-search-page-flights-flight-logo img{
+        width:45px;
+        height: 45px;
+        margin: 10px;
+        margin-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-name-number p{
+        font-size: 14px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+
+    .flight-search-page-flights-flight-name-number p:first-of-type{
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-dep-dur-arr{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-flight-departure{
+        width:30%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-departure p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-departure p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-arrival{
+        width:30%;
+        text-align:center;
+    }
+
+    .flight-search-page-flights-flight-arrival p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-arrival p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-duration{
+        width:40%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-price-book{
+        width:30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .flight-search-page-flights-flight-price{
+        margin-right: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        width: 40%;
+    }
+
+    .flight-search-page-flights-flight-book{
+        width:60%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        /* height: 40px; */
+        border-radius: 16px;
+        border: 1px solid black;
+    }
+
+    .flight-search-page-flights-flight-book p{
+        margin: 0px;
+        margin: 5px;
+    }
+
+    .flight-search-page-flights-flight-more-details{
+        width:100%;
+        width: 720px;
+        border-top: 2px solid orange;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-more-details-button{
+        width:100%;
+        flex:0 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: orange;
+    }
+
+    .flight-search-page-flights-flight-more-details-button p{
+        margin: 10px;
+    }
+
 }
 
 @media screen and (max-width:991px) and (min-width:768px){
@@ -388,6 +800,176 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .flight-search-page-flights-sort-names{
+        display: none;
+    }
+
+    .flight-search-page-flights-sort-options-all{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-sort-option-1{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-2{
+        width:40%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-3{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-4{
+        width:25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+    }
+
+    .flight-search-page-flights{
+        width:100%;
+        max-width: 720px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-logo-name-number{
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 30px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+    }
+
+    .flight-search-page-flights-flight-logo img{
+        height: 25px;
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-name-number{
+        display: flex;
+        align-items: center;
+    }
+
+    .flight-search-page-flights-flight-name-number p{
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .flight-search-page-flights-flight-name-number p:first-of-type{
+        padding-right: 10px;
+        border-right: 1px solid black;
+    }
+
+    .flight-search-page-flights-flight-dep-dur-arr{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-flight-departure{
+        width:30%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-departure p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-departure p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-arrival{
+        width:30%;
+        text-align:center;
+    }
+
+    .flight-search-page-flights-flight-arrival p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-arrival p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-duration{
+        width:40%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-price-book{
+        width:25%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .flight-search-page-flights-flight-price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .flight-search-page-flights-flight-book{
+        display: none;
+    }
+
+    .flight-search-page-flights-flight-more-details{
+        display: none;
+    }
+
     
     .flight-search-page-backpage{
         flex:0 0 10%;
@@ -531,6 +1113,175 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .flight-search-page-flights-sort-names{
+        display: none;
+    }
+
+    .flight-search-page-flights-sort-options-all{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-sort-option-1{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-2{
+        width:40%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-3{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-4{
+        width:25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+    }
+
+    .flight-search-page-flights{
+        width:100%;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-logo-name-number{
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 30px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+    }
+
+    .flight-search-page-flights-flight-logo img{
+        height: 25px;
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-name-number{
+        display: flex;
+        align-items: center;
+    }
+
+    .flight-search-page-flights-flight-name-number p{
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .flight-search-page-flights-flight-name-number p:first-of-type{
+        padding-right: 10px;
+        border-right: 1px solid black;
+    }
+
+    .flight-search-page-flights-flight-dep-dur-arr{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-flight-departure{
+        width:30%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-departure p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-departure p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-arrival{
+        width:30%;
+        text-align:center;
+    }
+
+    .flight-search-page-flights-flight-arrival p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-arrival p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-duration{
+        width:40%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-price-book{
+        width:25%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .flight-search-page-flights-flight-price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .flight-search-page-flights-flight-book{
+        display: none;
+    }
+
+    .flight-search-page-flights-flight-more-details{
+        display: none;
+    }
     
     .flight-search-page-backpage{
         flex:0 0 10%;
@@ -673,6 +1424,175 @@
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .flight-search-page-flights-sort-names{
+        display: none;
+    }
+
+    .flight-search-page-flights-sort-options-all{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-sort-option-1{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-2{
+        width:40%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-3{
+        width:30%;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flight-search-page-flights-sort-option-4{
+        width:25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        align-items: center;
+    }
+
+    .flight-search-page-flights{
+        width:100%;
+        max-width: 390px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-logo-name-number{
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 30px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+    }
+
+    .flight-search-page-flights-flight-logo img{
+        height: 25px;
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .flight-search-page-flights-flight-name-number{
+        display: flex;
+        align-items: center;
+    }
+
+    .flight-search-page-flights-flight-name-number p{
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .flight-search-page-flights-flight-name-number p:first-of-type{
+        padding-right: 10px;
+        border-right: 1px solid black;
+    }
+
+    .flight-search-page-flights-flight-dep-dur-arr{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .flight-search-page-flights-flight-departure{
+        width:30%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-departure p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-departure p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-arrival{
+        width:30%;
+        text-align:center;
+    }
+
+    .flight-search-page-flights-flight-arrival p:first-of-type{
+        margin-bottom: 3px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .flight-search-page-flights-flight-arrival p:nth-of-type(2){
+        margin-top: 3px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+
+    .flight-search-page-flights-flight-duration{
+        width:40%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-price-book{
+        width:25%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .flight-search-page-flights-flight-price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .flight-search-page-flights-flight-book{
+        display: none;
+    }
+
+    .flight-search-page-flights-flight-more-details{
+        display: none;
     }
     
     .flight-search-page-backpage{
