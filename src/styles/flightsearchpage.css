@@ -5,7 +5,7 @@
 
 .flight-search-page-top-bar{
     width: 100%;
-    background-color: #ffaf1a;
+    background-color:#2276e3;
     margin: 0;
 }
 
@@ -31,7 +31,7 @@
 
 .flight-search-page-fliter-and-flight-details{
     width: 100%;
-    background-color: #e6e6e6;
+    background-color: #e1e7ee;
 }
 
 .flight-search-page-fliter-and-flight-details-container{
@@ -44,6 +44,32 @@
 .flight-search-page-mobile-filter{
     display: none;
 }
+
+.input-field1{
+    background-color: #175abf;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    padding-left: 25px;
+    max-width: 100%;
+    margin: 0;
+    border-width: 0;
+    border-radius: 2px;
+    height: 40px;
+}
+
+.flight-no-of-adults1{
+    background-color: #175abf;
+    color: #fff;
+    display: block;
+    width: 100%;
+    outline: none;
+    border-width: 0px;
+    border-radius: 2px;
+    appearance: none;
+    padding: 10px;
+}
+
 
 @media screen and (min-width:1200px)
 {
@@ -141,7 +167,9 @@
         background: none;
         height: 40px;
         position: relative;
-        background-color: white;
+        background-color: #175abf;
+        color: #fff;
+        border-width: 0px;
     }
 
     .flight-search-page-search-bars-icon{
@@ -181,7 +209,8 @@
     .flight-search-page-flights-sort-options{
         width:100%;
         max-width: 830px;
-        margin: 20px;
+        margin: 10px;
+        margin-top: 0px;
         margin-left: 0px;
         background-color: white;
         height: 40px;
@@ -267,6 +296,7 @@
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
 
     .flight-search-page-flights-flight-logo-name-number{
@@ -366,10 +396,12 @@
         font-size: 18px;
         /* height: 40px; */
         border-radius: 16px;
-        border: 1px solid black;
+        background-color: #f37638;
+        border: 1px solid #f37638;
     }
 
     .flight-search-page-flights-flight-book p{
+        color: white;
         margin: 0px;
         margin: 5px;
     }
@@ -377,7 +409,7 @@
     .flight-search-page-flights-flight-more-details{
         width:100%;
         width: 830px;
-        border-top: 2px solid orange;
+        border-top: 2px solid #e1e7ee;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -386,6 +418,7 @@
         margin-right: -20px;
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 20px;
     }
 
     .flight-search-page-flights-flight-more-details-button{
@@ -394,7 +427,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        color: orange;
+        color: #2276e3;
         cursor: pointer;
     }
 
@@ -462,7 +495,7 @@
     }
 
     .flight-search-page-flights-flight-more-details-details-details1-border{
-        border: 1px solid #e2e2e2;
+        border: 1px solid #e1e7ee;
     }
 
     .flight-search-page-flights-flight-more-details-details-details-name-logo{
@@ -522,13 +555,13 @@
     .bagagge-table
     {
         width:100%;
-        border: 1px solid #e6e6e6;
+        border: 1px solid #e1e7ee;
         border-radius: 5px;
         border-collapse: collapse;
     }
 
     .bagagge-table th,td{
-       border: 1px solid #e6e6e6;
+       border: 1px solid #e1e7ee;
        border-collapse: collapse;
        padding: 15px;
        text-align: center;
@@ -664,7 +697,9 @@
         background: none;
         height: 40px;
         position: relative;
-        background-color: white;
+        background-color: #175abf;
+        color: #fff;
+        border-width: 0px;
         margin-top: 20px;
     }
 
@@ -801,6 +836,7 @@
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
 
     .flight-search-page-flights-flight-logo-name-number{
@@ -900,10 +936,12 @@
         font-size: 18px;
         /* height: 40px; */
         border-radius: 16px;
-        border: 1px solid black;
+        background-color: #f37638;
+        border: 1px solid #f37638;
     }
 
     .flight-search-page-flights-flight-book p{
+        color: white;
         margin: 0px;
         margin: 5px;
     }
@@ -911,7 +949,7 @@
     .flight-search-page-flights-flight-more-details{
         width:100%;
         width: 720px;
-        border-top: 2px solid orange;
+        border-top: 2px solid #e1e7ee;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -920,6 +958,7 @@
         margin-right: -20px;
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 20px;
     }
 
     .flight-search-page-flights-flight-more-details-button{
@@ -928,7 +967,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        color: orange;
+        color: #2276e3;
     }
 
     .flight-search-page-flights-flight-more-details-button p{
@@ -1105,7 +1144,6 @@
     .flight-search-page-mobile-displaybar{
         display: block;
         max-width: 720px;
-        background-color: #ffaf1a;
     }
 
     .flight-search-page-flight-details{
@@ -1194,6 +1232,7 @@
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
 
     .flight-search-page-flights-flight-logo-name-number{
@@ -1507,6 +1546,7 @@
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
 
     .flight-search-page-flights-flight-logo-name-number{
@@ -1819,6 +1859,7 @@
         margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
 
     .flight-search-page-flights-flight-logo-name-number{

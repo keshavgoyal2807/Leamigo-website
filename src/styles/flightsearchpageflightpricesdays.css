@@ -84,6 +84,7 @@
         max-width: 770px;
         margin: 30px;
         margin-top: 0px;
+        margin-bottom: 10px;
         background-color: white;
         height: 80px;
         position: relative;
@@ -97,6 +98,7 @@
     .f-s-p-prices-and-days{
         max-width: 660px;
         margin: 0 auto;
+        margin-bottom: 10px;
         background-color: white;
         height: 80px;
         position: relative;

@@ -16,11 +16,11 @@ class FlightSearchPage extends React.Component{
         super(props)
         this.state={
             flight:{
-                src:props.flight.location.state.flight.src,
-                dest:props.flight.location.state.flight.dest,
-                dep:props.flight.location.state.flight.dep,
-                arr:props.flight.location.state.flight.arr,
-                adults:props.flight.location.state.flight.adults,
+                src:'',
+                dest:'',
+                dep:'',
+                arr:'',
+                adults:'',
                 depdate:"",
                 depmon:"",
                 depyear:""
@@ -56,15 +56,20 @@ class FlightSearchPage extends React.Component{
         if(this.props.flight.location.state)
         {
 
-            this.setState((prev_state)=>{
+            this.setState((prev_state,props)=>{
                 return(
                     {
                         ...prev_state,
                         flight:{
                             ...prev_state.flight,
-                            depdate: new Date(prev_state.flight.dep).getDate(),
-                            depmon: new Date(prev_state.flight.dep).getMonth(),
-                            depyear: new Date(prev_state.flight.dep).getFullYear()
+                            src:props.flight.location.state.flight.src,
+                            dest:props.flight.location.state.flight.dest,
+                            dep:props.flight.location.state.flight.dep,
+                            arr:props.flight.location.state.flight.arr,
+                            adults:props.flight.location.state.flight.adults,
+                            depdate: new Date(props.flight.location.state.flight.dep).getDate(),
+                            depmon: new Date(props.flight.location.state.flight.dep).getMonth(),
+                            depyear: new Date(props.flight.location.state.flight.dep).getFullYear()
                         }
                     }
                 )
@@ -81,27 +86,27 @@ class FlightSearchPage extends React.Component{
                     <form className="flight-search-page-flight-form">
                         <div className="flight-search-page-flight-src-and-dest">
                             <div className="flight-search-page-flight-source">
-                                <input type="text" className="input-field"  value={this.state.flight.src} onChange={(e)=>{this.flight.src=e.target.value}}></input>
+                                <input type="text" className="input-field1"  value={this.state.flight.src} onChange={(e)=>{this.flight.src=e.target.value}}></input>
                                 <FaMapMarkerAlt size={15} className="flight-search-page-search-bars-icon"></FaMapMarkerAlt>
                             </div>
                             <div className="flight-search-page-flight-destination">
-                                <input type="text" className="input-field" placeholder="TO" value={this.state.flight.dest} onChange={(e)=>{this.flight.dest=e.target.value}}></input>
+                                <input type="text" className="input-field1" placeholder="TO" value={this.state.flight.dest} onChange={(e)=>{this.flight.dest=e.target.value}}></input>
                                 <FaMapMarkerAlt size={15} className="flight-search-page-search-bars-icon"></FaMapMarkerAlt>
                             </div>
                         </div>
                         <div className="flight-search-page-flight-check-in-out">
                             <div className="flight-search-page-flight-check-in">
-                                <input type="date" className="input-field input-field-date" placeholder="CHECK IN" value={this.state.flight.dep} onChange={(e)=>{this.flight.dep=e.target.value}} ></input>
+                                <input type="date" className="input-field1 input-field-date" placeholder="CHECK IN" value={this.state.flight.dep} onChange={(e)=>{this.flight.dep=e.target.value}} ></input>
                                 <FaRegCalendarAlt size={15} className="flight-search-page-search-bars-icon"></FaRegCalendarAlt>
                             </div>
                             <div className="flight-search-page-flight-check-out">
-                                <input type="date" className="input-field input-field-date" placeholder="CHECK OUT" value={this.state.flight.arr}  onChange={(e)=>{this.flight.arr=e.target.value}}></input>
+                                <input type="date" className="input-field1 input-field-date" placeholder="CHECK OUT" value={this.state.flight.arr}  onChange={(e)=>{this.flight.arr=e.target.value}}></input>
                                 <FaRegCalendarAlt size={15} className="flight-search-page-search-bars-icon"></FaRegCalendarAlt>
                             </div>
                         </div>
                         <div className="flight-search-page-flight-adults">
                             <div className="flight-search-page-flight-adults-counts">
-                                <select className="flight-no-of-adults" value={this.state.flight.adults} onChange={(e)=>{this.state.flight.adults=e.target.value}}>
+                                <select className="flight-no-of-adults1" value={this.state.flight.adults} onChange={(e)=>{this.state.flight.adults=e.target.value}}>
                                     <option value={''}>ADULTS</option>
                                     <option value={1}>1</option>
                                     <option value={2}>2</option>
