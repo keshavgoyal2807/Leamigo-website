@@ -395,12 +395,176 @@
         align-items: center;
         justify-content: flex-end;
         color: orange;
+        cursor: pointer;
     }
 
     .flight-search-page-flights-flight-more-details-button p{
         margin: 10px;
     }
 
+    .flight-search-page-flights-flight-more-details-details
+    {
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        display: none;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-active{
+        display: block;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-options
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-options p{
+        margin: 0px;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-option
+    {
+        width:22%;
+        border: 1px solid black;
+        box-shadow: 2px 2px 3px #f2f2f2;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-option-active{
+        background-color: orange;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details1{
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        display: none;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details1-active{
+        display: flex;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details1-border{
+        border: 1px solid #e2e2e2;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details-name-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width:20%;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details-name-logo img
+    {
+        width: 35px;
+        height: 35px;
+        margin: 3px;
+        /* margin-bottom: 0px; */
+    }
+    
+
+    .flight-search-page-flights-flight-more-details-details-details-name-logo p
+    {
+        margin: 3px;
+        /* margin-bottom: 0px; */
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details-flightd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .flight-search-page-flights-flight-duration1{
+        width:40%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-duration1 hr{
+        width: 50%;
+    }
+
+    .flight-search-page-flights-flight-duration1 p:nth-of-type(2)
+    {
+        margin: 0px;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .baggage-image{
+        width:30px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .bagagge-table
+    {
+        width:100%;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        border-collapse: collapse;
+    }
+
+    .bagagge-table th,td{
+       border: 1px solid #e6e6e6;
+       border-collapse: collapse;
+       padding: 15px;
+       text-align: center;
+       font-size: 12px;
+       font-weight: normal;
+    }
+
+    .fare-details{
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        border-collapse: collapse;
+    }
+
+    .fare-details td{
+        border: 1px solid #e6e6e6;
+        border-collapse: collapse;
+        padding: 15px;
+        font-size: 12px;
+        font-weight: normal;
+     }
+
+     .fare-details td:nth-of-type(2n+1)
+     {
+         text-align: left;
+     }
+
+     .fare-details td:nth-of-type(2n)
+     {
+         text-align: right;
+     }
+
+     .fare-details tr:nth-of-type(3) td
+     {
+        font-weight: bold;
+     }
 }
 
 @media screen and (min-width:992px) and (max-width:1199px)
@@ -770,6 +934,170 @@
     .flight-search-page-flights-flight-more-details-button p{
         margin: 10px;
     }
+
+    .flight-search-page-flights-flight-more-details-details
+    {
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        display: none;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-active{
+        display: block;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-options
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-options p{
+        margin: 0px;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-option
+    {
+        width:22%;
+        border: 1px solid black;
+        box-shadow: 2px 2px 3px #f2f2f2;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-option-active{
+        background-color: orange;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details1{
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        display: none;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details1-active{
+        display: flex;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details1-border{
+        border: 1px solid #e2e2e2;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details-name-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width:20%;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details-name-logo img
+    {
+        width: 35px;
+        height: 35px;
+        margin: 3px;
+        /* margin-bottom: 0px; */
+    }
+    
+
+    .flight-search-page-flights-flight-more-details-details-details-name-logo p
+    {
+        margin: 3px;
+        /* margin-bottom: 0px; */
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    .flight-search-page-flights-flight-more-details-details-details-flightd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .flight-search-page-flights-flight-duration1{
+        width:40%;
+        text-align: center;
+    }
+
+    .flight-search-page-flights-flight-duration1 hr{
+        width: 50%;
+    }
+
+    .flight-search-page-flights-flight-duration1 p:nth-of-type(2)
+    {
+        margin: 0px;
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .baggage-image{
+        width:30px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .bagagge-table
+    {
+        width:100%;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        border-collapse: collapse;
+    }
+
+    .bagagge-table th,td{
+       border: 1px solid #e6e6e6;
+       border-collapse: collapse;
+       padding: 15px;
+       text-align: center;
+       font-size: 12px;
+       font-weight: normal;
+    }
+
+    .fare-details{
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        border-collapse: collapse;
+    }
+
+    .fare-details td{
+        border: 1px solid #e6e6e6;
+        border-collapse: collapse;
+        padding: 15px;
+        font-size: 12px;
+        font-weight: normal;
+     }
+
+     .fare-details td:nth-of-type(2n+1)
+     {
+         text-align: left;
+     }
+
+     .fare-details td:nth-of-type(2n)
+     {
+         text-align: right;
+     }
+
+     .fare-details tr:nth-of-type(3) td
+     {
+        font-weight: bold;
+     }
 
 }
 

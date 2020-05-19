@@ -28,6 +28,7 @@ class FlightSearchPage extends React.Component{
             flights:[{flight_no:'G8-119',flight_name:'Indigo',dep_time:new Date(),arr_time:new Date(),stops:0,price:'2,599'}]
         }
         this.month_short = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+        this.flight_details_options=0
     }
 
     mobilefilteropen = ()=>{
@@ -35,6 +36,21 @@ class FlightSearchPage extends React.Component{
         console.log(document.getElementsByClassName('flight-search-page-mobile-filter')[0].classList)
         document.getElementsByClassName('flight-search-page-mobile-filter')[0].classList.add('flight-search-page-mobile-filter-open')
     }
+
+    showDetails = ()=>{
+        document.querySelector('.flight-search-page-flights-flight-more-details-details').classList.toggle('flight-search-page-flights-flight-more-details-details-active')
+        document.querySelectorAll('.flight-search-page-flights-flight-more-details-details-option')[this.flight_details_options].classList.toggle('flight-search-page-flights-flight-more-details-details-option-active')
+        document.querySelectorAll('.flight-search-page-flights-flight-more-details-details-details1')[this.flight_details_options].classList.toggle('flight-search-page-flights-flight-more-details-details-details1-active')
+    }
+
+    changeDetailOption = (index)=>{
+        document.querySelectorAll('.flight-search-page-flights-flight-more-details-details-option')[this.flight_details_options].classList.toggle('flight-search-page-flights-flight-more-details-details-option-active')
+        document.querySelectorAll('.flight-search-page-flights-flight-more-details-details-details1')[this.flight_details_options].classList.toggle('flight-search-page-flights-flight-more-details-details-details1-active')
+        this.flight_details_options = index;
+        document.querySelectorAll('.flight-search-page-flights-flight-more-details-details-option')[this.flight_details_options].classList.toggle('flight-search-page-flights-flight-more-details-details-option-active')
+        document.querySelectorAll('.flight-search-page-flights-flight-more-details-details-details1')[this.flight_details_options].classList.toggle('flight-search-page-flights-flight-more-details-details-details1-active')
+    }
+
 
     componentDidMount = ()=>{
         if(this.props.flight.location.state)
@@ -193,9 +209,83 @@ class FlightSearchPage extends React.Component{
                                     </div>
                                 </div>
                                 <div className="flight-search-page-flights-flight-more-details">
-                                    <div className="flight-search-page-flights-flight-more-details-button">
+                                    <div className="flight-search-page-flights-flight-more-details-button" onClick={()=>this.showDetails()}>
                                         <p>Flight Details</p>
                                         <FaAngleDown className="flight-search-page-flights-flight-more-details-button-icon" />
+                                    </div>
+                                    <div className="flight-search-page-flights-flight-more-details-details">
+                                        <div className="flight-search-page-flights-flight-more-details-details-options">
+                                            <div className="flight-search-page-flights-flight-more-details-details-option" onClick={()=>{this.changeDetailOption(0)}}>
+                                                <p>Flight Details</p>
+                                            </div>
+                                            <div className="flight-search-page-flights-flight-more-details-details-option" onClick={()=>{this.changeDetailOption(1)}}>
+                                                <p>Baggage Rules</p>
+                                            </div>
+                                            <div className="flight-search-page-flights-flight-more-details-details-option" onClick={()=>{this.changeDetailOption(2)}}>
+                                                <p>Fare Details</p>
+                                            </div>
+                                            <div className="flight-search-page-flights-flight-more-details-details-option" onClick={()=>{this.changeDetailOption(3)}}>
+                                                <p>Cancellation Rules</p>
+                                            </div>
+                                        </div>
+                                        <div className="flight-search-page-flights-flight-more-details-details-details">
+                                            <div className="flight-search-page-flights-flight-more-details-details-details1 flight-search-page-flights-flight-more-details-details-details1-border ">
+                                                <div className="flight-search-page-flights-flight-more-details-details-details-name-logo">
+                                                    <img src={indlogo} alt="logo"/>
+                                                    <p>{this.state.flights[0].flight_name}</p>
+                                                    <p>{this.state.flights[0].flight_no}</p>
+                                                </div>
+                                                <div className="flight-search-page-flights-flight-more-details-details-details-flightd">
+                                                    <div className="flight-search-page-flights-flight-departure">
+                                                        <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
+                                                        <p>{this.state.flight.src}</p>
+                                                    </div>
+                                                    <div className="flight-search-page-flights-flight-duration1">
+                                                        <p>{this.state.flights[0].arr_time.getHours()-this.state.flights[0].dep_time.getHours()+3} hrs {this.state.flights[0].arr_time.getMinutes()-this.state.flights[0].dep_time.getMinutes()+20} mins</p>
+                                                        <hr></hr>
+                                                        <p>Total Duration</p>
+                                                    </div>
+                                                    <div className="flight-search-page-flights-flight-arrival">
+                                                        <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
+                                                        <p>{this.state.flight.dest}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="flight-search-page-flights-flight-more-details-details-details1">
+                                                <img src={indlogo} className="baggage-image"/>
+                                                <table className="bagagge-table">
+                                                    <tr>
+                                                        <th>Baggage Type</th>
+                                                        <th>Check-In</th>
+                                                        <th>Cabin</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Adult</td>
+                                                        <td>15kgs</td>
+                                                        <td>7kgs</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div className="flight-search-page-flights-flight-more-details-details-details1">
+                                                <table className="fare-details">
+                                                    <tr>
+                                                        <td>Base Fare (1 Adult)</td>
+                                                        <td>$2,320</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Taxes and Fees (1 Adult)</td>
+                                                        <td>$2,320</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Fare (1 Adult)</td>
+                                                        <td>$2,320</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div className="flight-search-page-flights-flight-more-details-details-details1">
+                                                <p>To be Added</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
