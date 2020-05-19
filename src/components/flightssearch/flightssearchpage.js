@@ -157,7 +157,7 @@ class FlightSearchPage extends React.Component{
                         </div>
                         <div className="flight-search-page-flight-details">
                             <div className="flight-search-page-flight-days-price">
-                                <FLightSearchPageFlightPricesDays start_Date = {this.state.flight.dep}/>
+                                <FLightSearchPageFlightPricesDays start_Date = {()=>{if(this.props.flight.location.state){return(this.props.flight.location.state.flight.dep)}else{return(new Date())}}}/>
                             </div>
                             <div className="flight-search-page-flights-sort-options">
                                 <div className="flight-search-page-flights-sort-names">

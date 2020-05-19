@@ -8,7 +8,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
         super(props)
         this.state = {
             price_per_day:[],
-            date_of_flight:new Date(this.props.start_Date)
+            date_of_flight:new Date(this.props.start_Date())
         }
         this.days_in_week = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
         this.months_in_year = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -19,6 +19,7 @@ class FLightSearchPageFlightPricesDays extends React.Component{
     }
 
     componentDidMount = ()=>{
+        
         var days1 =[];
         var price = [2000,3000,4000];
         var j=0;
