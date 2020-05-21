@@ -706,3 +706,10 @@
     }
 }
 
+
+@media screen and (max-width:991px)
+{
+    .flight-booking-page-desktop{
+        display: none;
+    }
+}
