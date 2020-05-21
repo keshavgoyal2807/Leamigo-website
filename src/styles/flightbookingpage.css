@@ -1,0 +1,708 @@
+.flight-booking-page-desktop-left-ticket-details{
+    width:100%;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    background-color: #fff;
+    border:    1px solid #e6e6e6;
+}
+
+.flight-booking-page-desktop-left-ticket-details-header{
+    width:100%;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.flight-booking-page-desktop-left-ticket-details-header p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:90%;
+    margin: 0 auto;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-top-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-top-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #7ed321;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+
+.flight-booking-page-desktop-left-ticket-details-content-top-icon{
+    width:25px;
+    height: 25px;
+    color: #2d67b2;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-top-left p{
+    margin: 0;
+    font-size: 18px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-top-right p{
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box{
+    width:100%;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding-top: 10px;
+    padding-bottom: 10x;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex:0 0 100%;
+    flex-wrap: wrap;
+}
+
+
+.flight-booking-page-desktop-left-ticket-details-content-box-halfcircle-down{
+    width:20px;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-top-color: #fff;
+    position: absolute;
+    top:-1px;
+    right: 140px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.flight-booking-page-desktop-left-ticket-details-content-box-halfcircle-up{
+    width:20px;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-bottom-color: #fff;
+    position: absolute;
+    bottom:-1px;
+    right: 140px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-details{
+    width:17%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 5px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-details img{
+    width:30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-details p{
+    margin: 2px;
+    font-size: 12px;
+    color: #999;
+    margin-left: 0px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-departure{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-departure p{
+    margin: 2px;
+    font-size: 14px;
+    color: #999;
+    margin-left: 0px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-departure p:nth-of-type(2)
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-arrival{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-arrival p{
+    margin: 2px;
+    font-size: 14px;
+    color: #999;
+    margin-left: 0px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-arrival p:nth-of-type(2)
+{
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-duration{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-duration-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flight-booking-page-desktop-time-left-icon{
+    color: #2d67b2;
+    width:10px;
+    height:10px;
+}
+
+.flight-booking-page-desktop-time-right-icon{
+    color: #2d67b2;
+    width:15px;
+    height:15px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-duration-time span:nth-of-type(1)
+{
+    margin-right: 10px;
+    color:#333;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-duration-time p{
+    padding: 0px;
+    margin: 3px;
+    margin-right: 10px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-duration-p{
+    margin: 0px;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-baggage{
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    padding-left: 25px;
+}
+
+.flight-booking-page-desktop-left-ticket-details-content-box-flight-baggage p{
+    font-size: 12px;
+    color: #999;
+}
+
+.flight-booking-page-desktop-right-fare-details{
+    width:100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.flight-booking-page-desktop-right-fare-details-top{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flight-booking-page-desktop-right-fare-details-top p:nth-of-type(1){
+    margin: 2px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #333;
+
+}
+
+.flight-booking-page-desktop-right-fare-details-top p:nth-of-type(2){
+    margin: 2px;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #333;
+    
+}
+
+.flight-booking-page-desktop-right-fare-details-middle{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flight-booking-page-desktop-right-fare-details-bottom{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f8fcff;
+}
+
+.flight-booking-page-desktop-right-fare-details-fares{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.flight-booking-page-desktop-right-fare-details-fares1{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #2d67b2;
+    text-transform: capitalize;
+}
+
+.flight-booking-page-desktop-right-offer-details{
+    width:100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.flight-booking-page-desktop-right-offer-details-top{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flight-booking-page-desktop-right-offer-details-top p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.flight-booking-page-desktop-right-offer-details-middle{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flight-booking-page-desktop-right-offer-details-middle-icon
+{
+    width:25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #2d67b2;
+}
+
+.flight-booking-page-desktop-right-promo-code-details{
+    width:100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.flight-booking-page-desktop-right-promo-code-details p:nth-of-type(1)
+{
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.flight-booking-page-desktop-right-promo-code-details p:nth-of-type(2)
+{
+    font-size: 14px;
+    padding-bottom: 15px;
+    margin: 0;
+    color: #333;
+}
+
+.flight-booking-page-desktop-right-promo-code-input-apply{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.flight-booking-page-desktop-right-promo-code-input{
+    width: 65%;
+}
+
+.flight-booking-page-desktop-right-promo-code-apply{
+    background: #2d67b2;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 7px 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.flight-booking-page-desktop-right-promo-code-apply p{
+    margin: 2px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.flight-booking-page-desktop-left-traveller-details{
+    width:100%;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    background-color: #fff;
+    border:    1px solid #e6e6e6;
+    margin-top: 10px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-header{
+    width:100%;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.flight-booking-page-desktop-left-traveller-details-header p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-note{
+    width:95%;
+    margin: 0 auto;
+    color: #40708D;
+    background: #F5FBFE;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-note-sh{
+    background-color: #74BFDB;
+    border-radius: 2px;
+    margin-right: 5px;
+    padding: 3px;
+    color: #fff;
+}
+
+.flight-booking-page-desktop-left-traveller-details-note p{
+    margin: 2px;
+    font-size: 12px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult{
+    width: 95%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: 10px;
+    color: #333;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-icons p{
+    margin: 2px;
+    font-size: 14px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-icon{
+    width:30px;
+    height: 30px;
+    color:#333;
+    margin-right: 10px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    flex: 0 0 100%;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-name p{
+    margin: 3px;
+    margin-right: 40px;
+    color: #555;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-name-input{
+    width: 20%;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #555;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-date{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    flex: 0 0 100%;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-date p{
+    margin: 3px;
+    margin-right: 40px;
+    color: #555;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-date-input{
+    width: 20%;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #555;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-email{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    flex: 0 0 95%;
+    margin: 0 auto;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-email p:nth-of-type(1){
+    margin: 3px;
+    margin-right: 40px;
+    color: #555;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-email p:nth-of-type(2){
+    margin: 3px;
+    font-size: 12px;
+    color: #555;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+
+.flight-booking-page-desktop-left-traveller-details-adult-email-input{
+    width: 30%;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #555;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-number{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    flex: 0 0 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-number p{
+    margin: 3px;
+    margin-right: 40px;
+    color: #555;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+
+.flight-booking-page-desktop-left-traveller-details-adult-number-input{
+    width: 30%;
+    font-size: 14px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #555;
+}
+
+
+.flight-booking-page-desktop-left-traveller-details-proceed-to-next{
+    border-top: 1px solid #e6e6e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flight-booking-page-desktop-left-traveller-details-proceed-button{
+    background: #f37638;
+    color:#fff;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    min-height: 37px;
+    cursor: pointer;
+    width: 25%;
+    text-align: center;
+}
+
+.flight-booking-page-desktop-left-traveller-details-proceed-button p{
+    margin: 2px;
+}
+
+
+
+
+@media screen and (min-width:1200px)
+{
+    .flight-booking-page-outer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .flight-booking-page-mobile{
+        display: none;
+    }
+    .flight-booking-page-desktop{
+        display: flex;
+        flex: 1 0 100%;
+        padding: 10px;
+        padding-top: 40px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .flight-booking-page-desktop-left{
+        width:74%;
+    }
+
+    .flight-booking-page-desktop-right{
+        width:25%;
+        position: sticky;
+        position: -webkit-sticky;
+        top:10px;
+        z-index: 100;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+    .flight-booking-page-outer{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+
+    .flight-booking-page-mobile{
+        display: none;
+    }
+    .flight-booking-page-desktop{
+        display: flex;
+        flex: 1 0 100%;
+        padding: 10px;
+        padding-top: 40px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .flight-booking-page-desktop-left{
+        width:74%;
+    }
+
+    .flight-booking-page-desktop-right{
+        width:25%;
+        position: sticky;
+        position: -webkit-sticky;
+        top:10px;
+        z-index: 100;
+    }
+}
+

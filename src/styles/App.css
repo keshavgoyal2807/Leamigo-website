@@ -24,3 +24,9 @@
   width: 100%;
   position: relative;
 }
+
+.flight-booking-apge-main
+{
+  background-color: #f8f9fa;
+  overflow: auto;
+}

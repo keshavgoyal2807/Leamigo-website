@@ -19,6 +19,7 @@ import Blogs from './homepage/blogs';
 import Subscribe from './homepage/subscribe';
 import Footer from './homepage/footer';
 import FlightSearchPage from './flightssearch/flightssearchpage';
+import FlightBookingPage from './flightssearch/flightbookingpage';
 
 
 
@@ -56,6 +57,15 @@ class App extends React.Component{
               <FlightSearchPage flight={props}/>
             </div>
           )
+        }} />
+
+        <Route exact path="/flight-book" render={(props)=>{
+         return(
+           <div className="flight-booking-apge-main">
+            <Header />
+              <FlightBookingPage flight_details={props}/>
+           </div>
+         )
         }} />
       </Switch>
     )

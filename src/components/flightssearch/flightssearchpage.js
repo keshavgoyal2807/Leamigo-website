@@ -8,6 +8,7 @@ import FlightSearchPageDesktopFilter from './flightsearchpagedesktopfilter';
 import FlightSearchPageMobileFilter from './flightsearchpagemobilefilter';
 import FLightSearchPageFlightPricesDays from './flightsearchpageflightpricesdays';
 import indlogo from '../../images/indigo.gif'
+import { Link } from 'react-router-dom';
 
 
 class FlightSearchPage extends React.Component{
@@ -209,9 +210,9 @@ class FlightSearchPage extends React.Component{
                                     <div className="flight-search-page-flights-flight-price">
                                         <p>${this.state.flights[0].price}</p>
                                     </div>
-                                    <div className="flight-search-page-flights-flight-book">
+                                    <Link to={{pathname:"/flight-book",state:{flight_details:this.state}}}className="flight-search-page-flights-flight-book">
                                             <p>BOOK</p>
-                                    </div>
+                                    </Link>
                                 </div>
                                 <div className="flight-search-page-flights-flight-more-details">
                                     <div className="flight-search-page-flights-flight-more-details-button" onClick={()=>this.showDetails()}>
