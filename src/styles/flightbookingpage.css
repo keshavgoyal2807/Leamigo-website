@@ -248,164 +248,7 @@
     color: #999;
 }
 
-.flight-booking-page-desktop-right-fare-details{
-    width:100%;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
-    border-radius: 5px;
-    background-color: #fff;
-}
 
-.flight-booking-page-desktop-right-fare-details-top{
-    border-bottom: 1px dashed #cbcbcb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.flight-booking-page-desktop-right-fare-details-top p:nth-of-type(1){
-    margin: 2px;
-    font-size: 18px;
-    padding-left: 10px;
-    color: #333;
-
-}
-
-.flight-booking-page-desktop-right-fare-details-top p:nth-of-type(2){
-    margin: 2px;
-    font-size: 12px;
-    padding-left: 10px;
-    color: #333;
-    
-}
-
-.flight-booking-page-desktop-right-fare-details-middle{
-    border-bottom: 1px dashed #cbcbcb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.flight-booking-page-desktop-right-fare-details-bottom{
-    border-bottom: 1px dashed #cbcbcb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #f8fcff;
-}
-
-.flight-booking-page-desktop-right-fare-details-fares{
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #333;
-    text-transform: capitalize;
-}
-
-.flight-booking-page-desktop-right-fare-details-fares1{
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #2d67b2;
-    text-transform: capitalize;
-}
-
-.flight-booking-page-desktop-right-offer-details{
-    width:100%;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
-    border-radius: 5px;
-    background-color: #fff;
-    margin-top: 15px;
-}
-
-.flight-booking-page-desktop-right-offer-details-top{
-    border-bottom: 1px dashed #cbcbcb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.flight-booking-page-desktop-right-offer-details-top p{
-    font-size: 18px;
-    font-weight: bold;
-    margin: 2px;
-    margin-left: 10px;
-    color: #333;
-}
-
-.flight-booking-page-desktop-right-offer-details-middle{
-    border-bottom: 1px dashed #cbcbcb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.flight-booking-page-desktop-right-offer-details-middle-icon
-{
-    width:25px;
-    height: 25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #2d67b2;
-}
-
-.flight-booking-page-desktop-right-promo-code-details{
-    width:100%;
-    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
-    border-radius: 5px;
-    background-color: #fff;
-    margin-top: 15px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-}
-
-.flight-booking-page-desktop-right-promo-code-details p:nth-of-type(1)
-{
-    font-size: 16px;
-    padding-bottom: 5px;
-    margin: 0;
-    font-weight: bold;
-}
-
-.flight-booking-page-desktop-right-promo-code-details p:nth-of-type(2)
-{
-    font-size: 14px;
-    padding-bottom: 15px;
-    margin: 0;
-    color: #333;
-}
-
-.flight-booking-page-desktop-right-promo-code-input-apply{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 10px;
-    flex-wrap: wrap;
-}
-
-.flight-booking-page-desktop-right-promo-code-input{
-    width: 65%;
-}
-
-.flight-booking-page-desktop-right-promo-code-apply{
-    background: #2d67b2;
-    color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 7px 15px;
-    text-align: center;
-    margin-left: 5px;
-}
-
-.flight-booking-page-desktop-right-promo-code-apply p{
-    margin: 2px;
-    font-size: 14px;
-    font-weight: normal;
-}
 
 .flight-booking-page-desktop-left-traveller-details{
     width:100%;
@@ -868,4 +711,168 @@
         color: #333;
     }
 
+    .flight-booking-page-mobile-fare-offers{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+}
+
+.flight-booking-page-desktop-right-fare-details{
+    width:100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.flight-booking-page-desktop-right-fare-details-top{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flight-booking-page-desktop-right-fare-details-top p:nth-of-type(1){
+    margin: 2px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #333;
+
+}
+
+.flight-booking-page-desktop-right-fare-details-top p:nth-of-type(2){
+    margin: 2px;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #333;
+    
+}
+
+.flight-booking-page-desktop-right-fare-details-middle{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flight-booking-page-desktop-right-fare-details-bottom{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f8fcff;
+}
+
+.flight-booking-page-desktop-right-fare-details-fares{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.flight-booking-page-desktop-right-fare-details-fares1{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #2d67b2;
+    text-transform: capitalize;
+}
+
+.flight-booking-page-desktop-right-offer-details{
+    width:100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+.flight-booking-page-desktop-right-offer-details-top{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flight-booking-page-desktop-right-offer-details-top p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.flight-booking-page-desktop-right-offer-details-middle{
+    border-bottom: 1px dashed #cbcbcb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flight-booking-page-desktop-right-offer-details-middle-icon
+{
+    width:25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #2d67b2;
+}
+
+.flight-booking-page-desktop-right-promo-code-details{
+    width:100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.flight-booking-page-desktop-right-promo-code-details p:nth-of-type(1)
+{
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.flight-booking-page-desktop-right-promo-code-details p:nth-of-type(2)
+{
+    font-size: 14px;
+    padding-bottom: 15px;
+    margin: 0;
+    color: #333;
+}
+
+.flight-booking-page-desktop-right-promo-code-input-apply{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.flight-booking-page-desktop-right-promo-code-input{
+    width: 65%;
+}
+
+.flight-booking-page-desktop-right-promo-code-apply{
+    background: #2d67b2;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 7px 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.flight-booking-page-desktop-right-promo-code-apply p{
+    margin: 2px;
+    font-size: 14px;
+    font-weight: normal;
 }

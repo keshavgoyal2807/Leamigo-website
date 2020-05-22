@@ -250,6 +250,59 @@ class FlightBookingPage extends React.Component{
                                         <p>15 Kgs Check-In, 7 Kgs Cabin</p>
                         </div>
                     </div>
+                    <div className="flight-booking-page-mobile-fare-offers">
+                        <div className="flight-booking-page-desktop-right-fare-details">
+                            <div className="flight-booking-page-desktop-right-fare-details-top">
+                                <p>Fare Summary</p>
+                                <p>Travelers 1 Adult</p>
+                            </div>
+                            <div className="flight-booking-page-desktop-right-fare-details-middle">
+                                <div className="flight-booking-page-desktop-right-fare-details-fares">
+                                    <p>Base Fare</p>
+                                    <p>$2,478</p>
+                                </div>
+                                <div className="flight-booking-page-desktop-right-fare-details-fares">
+                                    <p>Fee & Surcharge</p>
+                                    <p>$2,478</p>
+                                </div>
+                                <div className="flight-booking-page-desktop-right-fare-details-fares">
+                                    <p>Add Ons</p>
+                                    <p>$2</p>
+                                </div>
+                            </div>
+                            <div className="flight-booking-page-desktop-right-fare-details-middle">
+                                <div className="flight-booking-page-desktop-right-fare-details-fares">
+                                    <p>Wallet Discount</p>
+                                    <p>$0</p>
+                                </div>
+                            </div>
+                            <div className="flight-booking-page-desktop-right-fare-details-bottom">
+                                <div className="flight-booking-page-desktop-right-fare-details-fares1">
+                                    <p>Total Amount</p>
+                                    <p>$3000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flight-booking-page-desktop-right-offer-details">
+                            <div className="flight-booking-page-desktop-right-offer-details-top">
+                                <p>Leamigo Offers</p>
+                            </div>
+                            <div className="flight-booking-page-desktop-right-offer-details-middle">
+                                <FaRegCircle className="flight-booking-page-desktop-right-offer-details-middle-icon" />
+                                <p>Use Wallet Discount</p>
+                            </div>
+                        </div>
+                        <div className="flight-booking-page-desktop-right-promo-code-details">
+                            <p>Apply Discount</p>
+                            <p>Have a discount/ promo code to redeem</p>
+                            <div className="flight-booking-page-desktop-right-promo-code-input-apply">
+                                <input type="text" className="flight-booking-page-desktop-right-promo-code-input" placeholder="Promo Code"/>
+                                <div className="flight-booking-page-desktop-right-promo-code-apply">
+                                    <p>Apply</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
