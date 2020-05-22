@@ -3,6 +3,7 @@ import '../../styles/flightbookingpage.css'
 import { FaPlane, FaCircle, FaRegCircle, FaAngleLeft } from 'react-icons/fa';
 import indlogo from '../../images/indigo.gif'
 import { MdPerson } from 'react-icons/md';
+import {Link, Route} from 'react-router-dom'
 
 class FlightBookingPage extends React.Component{
     constructor(props)
@@ -303,6 +304,10 @@ class FlightBookingPage extends React.Component{
                             </div>
                         </div>
                     </div>
+                    <Link to="/flight-traveller" className="flight-booking-page-mobile-next-option-link"><div className="flight-booking-page-mobile-next-option">
+                        <p>Procced</p>
+                    </div>
+                    </Link>
                 </div>
             </div>
         )
