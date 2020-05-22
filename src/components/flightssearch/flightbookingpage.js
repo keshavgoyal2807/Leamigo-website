@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../styles/flightbookingpage.css'
-import { FaPlane, FaCircle, FaRegCircle } from 'react-icons/fa';
+import { FaPlane, FaCircle, FaRegCircle, FaAngleLeft } from 'react-icons/fa';
 import indlogo from '../../images/indigo.gif'
 import { MdPerson } from 'react-icons/md';
 
@@ -34,14 +34,14 @@ class FlightBookingPage extends React.Component{
                         ...prev_state,
                         flight:{
                             ...prev_state.flight,
-                            src:props.flight_details.location.state.flight_details.flight.src,
-                            dest:props.flight_details.location.state.flight_details.flight.dest,
-                            dep:props.flight_details.location.state.flight_details.flight.dep,
-                            arr:props.flight_details.location.state.flight_details.flight.arr,
-                            adults:props.flight_details.location.state.flight_details.flight.adults,
-                            depdate: new Date(props.flight_details.location.state.flight_details.flight.dep).getDate(),
-                            depmon: new Date(props.flight_details.location.state.flight_details.flight.dep).getMonth(),
-                            depyear: new Date(props.flight_details.location.state.flight_details.flight.dep).getFullYear()
+                            src:props.flight_details.location.state.flight_details.src,
+                            dest:props.flight_details.location.state.flight_details.dest,
+                            dep:props.flight_details.location.state.flight_details.dep,
+                            arr:props.flight_details.location.state.flight_details.arr,
+                            adults:props.flight_details.location.state.flight_details.adults,
+                            depdate: new Date(props.flight_details.location.state.flight_details.dep).getDate(),
+                            depmon: new Date(props.flight_details.location.state.flight_details.dep).getMonth(),
+                            depyear: new Date(props.flight_details.location.state.flight_details.dep).getFullYear()
                         }
                     }
                 )
@@ -209,7 +209,10 @@ class FlightBookingPage extends React.Component{
                     </div>
                 </div>
                 <div className="flight-booking-page-mobile">
-
+                    <div className="flight-booking-page-mobile-header">
+                        <FaAngleLeft className="flight-booking-page-mobile-header-icon" onClick={()=>{this.props.flight_details.history.goBack()}} />
+                        <p>Flight Review</p>
+                    </div>
                 </div>
             </div>
         )

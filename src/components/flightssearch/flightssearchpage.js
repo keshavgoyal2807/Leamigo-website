@@ -8,7 +8,8 @@ import FlightSearchPageDesktopFilter from './flightsearchpagedesktopfilter';
 import FlightSearchPageMobileFilter from './flightsearchpagemobilefilter';
 import FLightSearchPageFlightPricesDays from './flightsearchpageflightpricesdays';
 import indlogo from '../../images/indigo.gif'
-import { Link } from 'react-router-dom';
+import { Link, Redirect} from 'react-router-dom';
+import { ThemeProvider } from '@material-ui/core';
 
 
 class FlightSearchPage extends React.Component{
@@ -26,10 +27,22 @@ class FlightSearchPage extends React.Component{
                 depmon:"",
                 depyear:""
             },
-            flights:[{flight_no:'G8-119',flight_name:'Indigo',dep_time:new Date(),arr_time:new Date(),stops:0,price:'2,599'}]
+            flights:[{flight_no:'G8-119',flight_name:'Indigo',dep_time:new Date(),arr_time:new Date(),stops:0,price:'2,599'}],
+            mobile_review:false
         }
         this.month_short = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
         this.flight_details_options=0
+        this.flight={
+            src:'',
+            dest:'',
+            dep:'',
+            arr:'',
+            adults:'',
+            depdate:"",
+            depmon:"",
+            depyear:""
+        }
+        this.main_ref = React.createRef();
     }
 
     mobilefilteropen = ()=>{
@@ -75,29 +88,58 @@ class FlightSearchPage extends React.Component{
                     }
                 )
             })
+            this.flight = {
+                src:this.props.flight.location.state.flight.src,
+                dest:this.props.flight.location.state.flight.dest,
+                dep:this.props.flight.location.state.flight.dep,
+                arr:this.props.flight.location.state.flight.arr,
+                adults:this.props.flight.location.state.flight.adults,
+                depdate: new Date(this.props.flight.location.state.flight.dep).getDate(),
+                depmon: new Date(this.props.flight.location.state.flight.dep).getMonth(),
+                depyear: new Date(this.props.flight.location.state.flight.dep).getFullYear()
+            }
+            console.log(this.flight)
+        }
+    }
+
+    flight_review_mobile = ()=>{
+        if(this.main_ref.current.clientWidth>=992)
+        {
+            return;
+        }
+        else
+        {
+            this.setState((prev_state)=>{
+                return(
+                    {
+                        ...prev_state,
+                        mobile_review:true
+                    }
+                )
+            })
         }
     }
 
     render()
     {
         return(
-            <div className="flight-search-page-main">
+            <div className="flight-search-page-main" ref={this.main_ref}>
                 <div className="flight-search-page-top-bar">
                     <div className="flight-search-page-desktop-searchbar">
                     <form className="flight-search-page-flight-form">
                         <div className="flight-search-page-flight-src-and-dest">
                             <div className="flight-search-page-flight-source">
-                                <input type="text" className="input-field1"  value={this.state.flight.src} onChange={(e)=>{this.flight.src=e.target.value}}></input>
+                                <input type="text" className="input-field1"  value={this.flight.src} onChange={(e)=>{this.flight.src=e.target.value}}></input>
                                 <FaMapMarkerAlt size={15} className="flight-search-page-search-bars-icon"></FaMapMarkerAlt>
                             </div>
                             <div className="flight-search-page-flight-destination">
-                                <input type="text" className="input-field1" placeholder="TO" value={this.state.flight.dest} onChange={(e)=>{this.flight.dest=e.target.value}}></input>
+                                <input type="text" className="input-field1" placeholder="TO" value={this.flight.dest} onChange={(e)=>{this.flight.dest=e.target.value}}></input>
                                 <FaMapMarkerAlt size={15} className="flight-search-page-search-bars-icon"></FaMapMarkerAlt>
                             </div>
                         </div>
                         <div className="flight-search-page-flight-check-in-out">
                             <div className="flight-search-page-flight-check-in">
-                                <input type="date" className="input-field1 input-field-date" placeholder="CHECK IN" value={this.state.flight.dep} onChange={(e)=>{this.flight.dep=e.target.value}} ></input>
+                                <input type="date" className="input-field1 input-field-date" placeholder="CHECK IN" value={this.flight.dep} onChange={(e)=>{this.flight.dep=e.target.value}} ></input>
                                 <FaRegCalendarAlt size={15} className="flight-search-page-search-bars-icon"></FaRegCalendarAlt>
                             </div>
                             <div className="flight-search-page-flight-check-out">
@@ -107,7 +149,7 @@ class FlightSearchPage extends React.Component{
                         </div>
                         <div className="flight-search-page-flight-adults">
                             <div className="flight-search-page-flight-adults-counts">
-                                <select className="flight-no-of-adults1" value={this.state.flight.adults} onChange={(e)=>{this.state.flight.adults=e.target.value}}>
+                                <select className="flight-no-of-adults1" value={this.flight.adults} onChange={(e)=>{this.state.flight.adults=e.target.value}}>
                                     <option value={''}>ADULTS</option>
                                     <option value={1}>1</option>
                                     <option value={2}>2</option>
@@ -128,17 +170,17 @@ class FlightSearchPage extends React.Component{
                         </div>
                         <div className="flight-search-page-flight-name-details">
                             <div className="flight-search-page-flight-srcdest-details">
-                            <p>{this.state.flight.src}</p>
+                            <p>{this.flight.src}</p>
                             <FaArrowsAltH  size={20}className="flight-search-page-flight-srcdest-icon" />
-                            <p>{this.state.flight.dest}</p>
+                            <p>{this.flight.dest}</p>
                             </div>
                             <div className="flight-search-page-flight-date-details">
                                 <div className="flight-search-page-flight-date-details1">
-                                <p>{this.state.flight.depdate} ' </p>
-                                <p>{this.month_short[this.state.flight.depmon]}&nbsp;</p>
-                                <p>{this.state.flight.depyear}</p>
+                                <p>{this.flight.depdate} ' </p>
+                                <p>{this.month_short[this.flight.depmon]}&nbsp;</p>
+                                <p>{this.flight.depyear}</p>
                                 </div>
-                                <p>{this.state.flight.adults} ADULTS</p>
+                                <p>{this.flight.adults} ADULTS</p>
                             </div>
                             
                         </div>
@@ -183,7 +225,7 @@ class FlightSearchPage extends React.Component{
                                     <FaLongArrowAltDown />
                                 </div>
                             </div>
-                            <div className="flight-search-page-flights">
+                            <div className="flight-search-page-flights" onClick={()=>{this.flight_review_mobile()}}>
                                 <div className="flight-search-page-flights-flight-logo-name-number">
                                     <div className="flight-search-page-flights-flight-logo">
                                         <img src={indlogo} alt="logo" />
@@ -196,24 +238,27 @@ class FlightSearchPage extends React.Component{
                                 <div className="flight-search-page-flights-flight-dep-dur-arr">
                                     <div className="flight-search-page-flights-flight-departure">
                                         <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
-                                        <p>{this.state.flight.src}</p>
+                                        <p>{this.flight.src}</p>
                                     </div>
                                     <div className="flight-search-page-flights-flight-duration">
                                         <p>{this.state.flights[0].arr_time.getHours()-this.state.flights[0].dep_time.getHours()+3} hrs {this.state.flights[0].arr_time.getMinutes()-this.state.flights[0].dep_time.getMinutes()+20} mins</p>
                                     </div>
                                     <div className="flight-search-page-flights-flight-arrival">
                                         <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
-                                        <p>{this.state.flight.dest}</p>
+                                        <p>{this.flight.dest}</p>
                                     </div>
                                 </div>
                                 <div className="flight-search-page-flights-flight-price-book">
                                     <div className="flight-search-page-flights-flight-price">
                                         <p>${this.state.flights[0].price}</p>
                                     </div>
-                                    <Link to={{pathname:"/flight-book",state:{flight_details:this.state}}}className="flight-search-page-flights-flight-book">
+                                    <Link to={{pathname:"/flight-book",state:{flight_details:this.flight}}}className="flight-search-page-flights-flight-book">
                                             <p>BOOK</p>
                                     </Link>
                                 </div>
+                                {this.state.mobile_review && <Redirect push to={{pathname:"/flight-book",
+                                                                            state:{flight_details:this.flight}  
+                                                                                }} />}
                                 <div className="flight-search-page-flights-flight-more-details">
                                     <div className="flight-search-page-flights-flight-more-details-button" onClick={()=>this.showDetails()}>
                                         <p>Flight Details</p>
@@ -244,7 +289,7 @@ class FlightSearchPage extends React.Component{
                                                 <div className="flight-search-page-flights-flight-more-details-details-details-flightd">
                                                     <div className="flight-search-page-flights-flight-departure">
                                                         <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
-                                                        <p>{this.state.flight.src}</p>
+                                                        <p>{this.flight.src}</p>
                                                     </div>
                                                     <div className="flight-search-page-flights-flight-duration1">
                                                         <p>{this.state.flights[0].arr_time.getHours()-this.state.flights[0].dep_time.getHours()+3} hrs {this.state.flights[0].arr_time.getMinutes()-this.state.flights[0].dep_time.getMinutes()+20} mins</p>
@@ -253,7 +298,7 @@ class FlightSearchPage extends React.Component{
                                                     </div>
                                                     <div className="flight-search-page-flights-flight-arrival">
                                                         <p>{this.state.flights[0].dep_time.getHours()}:{this.state.flights[0].dep_time.getMinutes()}</p>
-                                                        <p>{this.state.flight.dest}</p>
+                                                        <p>{this.flight.dest}</p>
                                                     </div>
                                                 </div>
                                             </div>

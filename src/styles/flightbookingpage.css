@@ -1,3 +1,5 @@
+@media screen and (min-width:992px)
+{
 .flight-booking-page-desktop-left-ticket-details{
     width:100%;
     padding-bottom: 20px;
@@ -639,6 +641,8 @@
     margin: 2px;
 }
 
+}
+
 
 
 
@@ -711,5 +715,32 @@
 {
     .flight-booking-page-desktop{
         display: none;
+    }
+    .flight-booking-page-mobile{
+        display: block;
+    }
+    .flight-booking-page-mobile-header{
+        width: 100%;
+        background-color: #2d67b2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .flight-booking-page-mobile-header-icon{
+        margin: 0px;
+        margin-right: 25%;
+        width: 10%;
+        height: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .flight-booking-page-mobile-header p{
+        margin: 0px;
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
     }
 }
