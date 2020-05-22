@@ -213,6 +213,43 @@ class FlightBookingPage extends React.Component{
                         <FaAngleLeft className="flight-booking-page-mobile-header-icon" onClick={()=>{this.props.flight_details.history.goBack()}} />
                         <p>Flight Review</p>
                     </div>
+                    <div className="flight-booking-page-mobile-ticket-details">
+                        <div className="flight-booking-page-mobile-ticket-details-header">
+                            <p>Mumbai - Delhi</p>
+                            <div className="flight-booking-page-mobile-ticket-details-header-right">
+                                        <p>Partially refundable</p>
+                            </div>
+                        </div>
+                        <div className="flight-booking-page-mobile-ticket-flight-details">
+                            <img src={indlogo} alt="logo" />
+                            <p>Indigo</p>
+                            <p>(G8-119)</p>
+                        </div>
+                        <div className="flight-booking-page-mobile-ticket-dep-dur-arr-details">
+                            <div className="flight-booking-page-mobile-ticket-dep-details">
+                                <p>Wed Jul 08 2020</p>
+                                <p>BOM 5:55</p>
+                                <p>Chhatrapati Shivaji International Airport,</p>
+                                <p>Mumbai, India</p>
+                                <p>(Terminal: 2)</p>
+                            </div>
+                            <div className="flight-booking-page-mobile-ticket-dur-details">
+                                <hr></hr>
+                                <p>2h 20m</p>
+                                <hr></hr>
+                            </div>
+                            <div className="flight-booking-page-mobile-ticket-arr-details">
+                                <p>Wed Jul 08 2020</p>
+                                <p>BOM 5:55</p>
+                                <p>Chhatrapati Shivaji International Airport,</p>
+                                <p>Mumbai, India</p>
+                                <p>(Terminal: 2)</p>
+                            </div>
+                        </div>
+                        <div className="flight-booking-page-mobile-ticket-details-flight-baggage">
+                                        <p>15 Kgs Check-In, 7 Kgs Cabin</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
